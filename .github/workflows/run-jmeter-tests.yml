@@ -15,5 +15,3 @@ jobs:
         uses: rbhadti94/apache-jmeter-action@v0.5.0
         with:
           testFilePath: test_plans/CAD2002.jmx
-          outputReportsFolder: reports/
-          args: "--loglevel INFO"
