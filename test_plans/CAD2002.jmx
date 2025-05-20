@@ -12,7 +12,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="qtdUsers" elementType="Argument">
             <stringProp name="Argument.name">qtdUsers</stringProp>
-            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.value">10</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="arqProtocolos" elementType="Argument">
