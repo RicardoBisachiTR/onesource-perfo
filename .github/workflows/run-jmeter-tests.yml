@@ -8,5 +8,3 @@ jobs:
         uses: QAInsights/PerfAction@v3.1
         with:
           test-plan-path: test_plans/CAD2002.jmx
-          args: ""
-      
