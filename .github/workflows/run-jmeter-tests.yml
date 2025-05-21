@@ -24,7 +24,7 @@ jobs:
       - name: Apache JMeter
         uses: rbhadti94/apache-jmeter-action@v0.7.0
         with:
-          testFilePath:: test-plans/CAD2002.jmx
+          testFilePath: test-plans/CAD2002.jmx
           outputReportsFolder: reports/
           args: "--loglevel INFO"
           
