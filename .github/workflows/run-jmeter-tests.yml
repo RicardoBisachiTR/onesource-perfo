@@ -10,8 +10,8 @@ jobs:
         uses: rbhadti94/apache-jmeter-action@v0.5.0
         with:
           testFilePath: test-plans/CAD2002.jmx
-          outputReportsFolder: test_plans/
+          outputReportsFolder: test-plans/
       - uses: actions/upload-artifact@v4
         with:
           name: jmeter-test-results
-          path: test_plans/
+          path: test-plans/
