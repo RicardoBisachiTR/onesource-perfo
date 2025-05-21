@@ -9,7 +9,7 @@ jobs:
       - name: Run JMeter Action on a test
         uses: rbhadti94/apache-jmeter-action@v0.5.0
         with:
-          testFilePath: test-plans/CAD2002.jmx
+          testFilePath: test-plans/
           outputReportsFolder: test-plans/
       - uses: actions/upload-artifact@v4
         with:
