@@ -1,17 +1,34 @@
 on:
   workflow_dispatch:
 
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  id-token: write
+  issues: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
 jobs:
   action_build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Run JMeter Action on a test
-        uses: rbhadti94/apache-jmeter-action@v0.5.0
+      - uses: actions/checkout@v4
+      
+      - name: Apache JMeter
+        uses: rbhadti94/apache-jmeter-action@v0.7.0
         with:
-          testFilePath: test_plans/CAD2002.jmx
-          outputReportsFolder: test_plans/
+          testFilePath:: test-plans/CAD2002.jmx
+          outputReportsFolder: reports/
+          args: "--loglevel INFO"
+          
       - uses: actions/upload-artifact@v4
         with:
           name: jmeter-test-results
-          path: test_plans/
+          path: reports/
