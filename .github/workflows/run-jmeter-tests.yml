@@ -24,8 +24,9 @@ jobs:
         uses: QAInsights/PerfAction@v3.1
         with:
           testFilePath: test-plans/
-          outputReportsFolder: test-plans/
-      - uses: actions/upload-artifact@v4
+          args: ''
+      - name: Upload Results
+        uses: actions/upload-artifact@v2
         with:
-          name: jmeter-test-results
-          path: test-plans/
+          name: jmeter-results
+          path: result.jtl
