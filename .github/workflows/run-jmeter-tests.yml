@@ -23,7 +23,7 @@ jobs:
       - name: Run JMeter Action on a test
         uses: QAInsights/PerfAction@v3.1
         with:
-          testFilePath: test-plans/
+          test-plan-path: test-plans/
           args: ''
       - name: Upload Results
         uses: actions/upload-artifact@v4
