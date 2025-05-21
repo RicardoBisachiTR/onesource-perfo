@@ -15,7 +15,7 @@ jobs:
         with:
           testFilePath: test_plans/CAD2002.jmx
           outputReportsFolder: test_plans/
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: jmeter-test-results
           path: test_plans/
