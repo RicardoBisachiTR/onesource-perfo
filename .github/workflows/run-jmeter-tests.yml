@@ -20,11 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run JMeter Action on a test
-        uses: QAInsights/PerfAction@v3.1
+      - name: Apache JMeter
+        uses: rbhadti94/apache-jmeter-action@v0.7.0
         with:
-          test-plan-path: test-plans/CAD2002.jmx
-          args: ''
+          testFilePath:: test-plans/CAD2002.jmx
+          outputReportsFolder: reports/
+          args: "--loglevel INFO"
       - name: Upload Results
         uses: actions/upload-artifact@v4
         with:
