@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run JMeter Action on a test
-        uses: rbhadti94/apache-jmeter-action@v0.5.0
+        uses: QAInsights/PerfAction@v3.1
         with:
           testFilePath: test-plans/
           outputReportsFolder: test-plans/
