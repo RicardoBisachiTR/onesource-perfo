@@ -31,7 +31,7 @@ jobs:
 
     - name: Executar teste JMeter
       run: |
-        ./jmeter/bin/jmeter -n -t test-plans/CAD2002.jmx -l result.jtl -J qtdUsers=${{ env.JMETER_THREAD }}
+        ./jmeter/bin/jmeter -n -t test-plans/CAD2002.jmx -l result.jtl -JqtdUsers=${{ env.JMETER_THREAD }}
 
     - name: Upload do resultado
       uses: actions/upload-artifact@v4
