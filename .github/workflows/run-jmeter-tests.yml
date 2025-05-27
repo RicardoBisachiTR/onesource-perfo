@@ -16,7 +16,8 @@ jobs:
 
     - name: Instalar Java
       uses: actions/setup-java@v4
-      with:        
+      with:
+        distribution: 'temurin'
         java-version: '11'
 
     - name: Baixar JMeter
