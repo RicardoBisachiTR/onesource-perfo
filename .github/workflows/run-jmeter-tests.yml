@@ -31,7 +31,7 @@ jobs:
         ./jmeter/bin/jmeter -n -t test-plans/CAD2002.jmx -l result.jtl
 
     - name: Upload do resultado
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: jmeter-result
         path: result.jtl
