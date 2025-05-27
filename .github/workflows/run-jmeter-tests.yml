@@ -24,7 +24,7 @@ jobs:
       run: |
         wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
         tar -xzf apache-jmeter-5.6.3.tgz
-        echo "JMeter downloaded and extracted."
+        mv apache-jmeter-5.6.3 jmeter
 
     - name: Executar teste JMeter
       run: |
