@@ -6,32 +6,40 @@ on:
   pull_request:
     branches: [ main ]
 
-jobs:
-  jmeter-tests:
-    runs-on: ubuntu-latest
+jobs : 
+  performance_test: 
+    runs-on: ubuntu-latest 
+    env :     
+      JMETER_PATH: 'test-plans/CAD2002.jmx'
+       WORKING_DIRECTORY: 
 
-    steps:
-    - name: Checkout do código
-      uses: actions/checkout@v4
+   
+    Etapas de desempenho: 
+      - usa: actions/checkout@v3 
 
-    - name: Instalar Java
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '8'
+      - nome: Configurar o Python 3.11 
+        usa: actions/setup-python@v4 
+        com: 
+          python-version: 3.11 
 
-    - name: Baixar JMeter
-      run: |
-        wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
-        tar -xzf apache-jmeter-5.6.3.tgz
-        mv apache-jmeter-5.6.3 jmeter
+      - nome: Configurar-Jmeter 
+        executar: | 
+          python3 -m pip install --upgrade pip 
+          pip3 install -r requirements.txt -q 
+          sudo apt-get update 
+          sudo apt install curl -y 
+          sudo apt install -y default-jdk 
+          sudo curl -O https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.5.tgz 
+          sudo tar -xvf apache-jmeter-5.5.tgz 
+          cd  $GITHUB_WORKSPACE /apache-jmeter-5.5/lib && sudo curl -O https://repo1.maven.org/maven2/kg/apc/cmdrunner/2.2.1/cmdrunner-2.2.1.jar 
+          cd  $GITHUB_WORKSPACE /apache-jmeter-5.5/lib/ext && sudo curl -O https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/1.6/jmeter-plugins-manager-1.6.jar 
+          cd  $GITHUB_WORKSPACE /apache-jmeter-5.5/lib && sudo java -jar cmdrunner-2.2.1.jar --tool org.jmeterplugins.repository.PluginManagerCMD install jpgc-synthesis,jpgc-graphs-basic,jpgc-graphs-additional,jpgc-cmd,jpgc-graphs-dist,jpgc-standard,jpgc-casutg 
+      
+      - name: Executar testes de desempenho 
+        run: | 
+          $GITHUB_WORKSPACE /apache-jmeter-5.5/bin/./jmeter.sh -n -t test-plan/CAD2002.jmx -l result.jtl 
+          
+          sudo java -jar $GITHUB_WORKSPACE /apache-jmeter-5.5/lib/cmdrunner-2.2.1.jar --tool Reporter --generate-csv aggregate_report.csv --input-jtl ${{ env.WORKING_DIRECTORY } }/result.jtl --plugin-type AggregateReport 
+          sudo $GITHUB_WORKSPACE /apache-jmeter-5.5/bin/./jmeter.sh -g ${{ env.WORKING_DIRECTORY } }/result.jtl -o${{ env.WORKING_DIRECTORY } }/graph_results 
 
-    - name: Executar teste JMeter
-      run: |
-        ./jmeter/bin/jmeter -n -t test-plans/CAD2002.jmx -l result.jtl
-
-    - name: Upload do resultado
-      uses: actions/upload-artifact@v4
-      with:
-        name: jmeter-result
-        path: result.jtl
+      
