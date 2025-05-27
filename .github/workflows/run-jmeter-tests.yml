@@ -1,28 +1,37 @@
-name: Test JMeter Action
+name: Teste de Carga com JMeter
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
-  action_build:
+  jmeter-tests:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+    - name: Checkout do código
+      uses: actions/checkout@v4
 
-      - name: Run JMeter Action on a test
-        uses: rbhadti94/apache-jmeter-action@v0.5.0
-        with:
-          testFilePath: test-plans/CAD2002.jmx
-          outputReportsFolder: reports/
-          args: "--loglevel INFO"
+    - name: Instalar Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '11'
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: jmeter-test-results
-          path: reports/
+    - name: Baixar JMeter
+      run: |
+        wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
+        tar -xzf apache-jmeter-5.6.3.tgz
+        mv apache-jmeter-5.6.3 jmeter
 
-          
+    - name: Executar teste JMeter
+      run: |
+        ./jmeter/bin/jmeter -n -t test-plans/CAD2002.jmx -l result.jtl
+
+    - name: Upload do resultado
+      uses: actions/upload-artifact@v4
+      with:
+        name: jmeter-result
+        path: result.jtl
