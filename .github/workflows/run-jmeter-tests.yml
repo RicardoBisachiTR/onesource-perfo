@@ -15,22 +15,21 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Instalar Java
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'temurin'
+      uses: actions/setup-java@v4
+      with:        
         java-version: '11'
 
     - name: Baixar JMeter
       run: |
         wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
         tar -xzf apache-jmeter-5.6.3.tgz
-        mv apache-jmeter-5.6.3 jmeter
+        echo "JMeter downloaded and extracted."
 
     - name: Executar teste JMeter
       run: |
-        ./jmeter/bin/jmeter -n -t test-plans/CAD2002.jmx -l result.jtl
+        ./jmeter/bin/jmeter -n -t ./test-plans/CAD2002.jmx -l result.jtl
 
-    - name: Upload do resultadoo
+    - name: Upload do resultado
       uses: actions/upload-artifact@v4
       with:
         name: jmeter-result
