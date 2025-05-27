@@ -28,7 +28,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
         <stringProp name="HTTPSampler.domain">qa01.onesourcebr.thomsonreuters.com</stringProp>
         <stringProp name="HTTPSampler.protocol">https</stringProp>
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
@@ -37,13 +37,13 @@
         <stringProp name="HTTPSampler.implementation"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager">
         <collectionProp name="CookieManager.cookies"/>
         <boolProp name="CookieManager.clearEachIteration">true</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
         <collectionProp name="HeaderManager.headers">
           <elementProp name="" elementType="Header">
             <stringProp name="Header.name">Authorization</stringProp>
@@ -60,7 +60,7 @@
         </collectionProp>
       </HeaderManager>
       <hashTree/>
-      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
         <boolProp name="clearEachIteration">true</boolProp>
         <boolProp name="useExpires">false</boolProp>
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
@@ -78,18 +78,11 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="false">
+        <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor">
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
           <boolProp name="resetInterpreter">false</boolProp>
-          <stringProp name="script">//import org.apache.commons.io.FileUtils;
-//List files = FileUtils.listFiles(new File(${pathProtocols}), new String[]{&quot;csv&quot;}, true);
-//for (File file : files) {
-//file.delete();
-//}
-
-
-import org.apache.jmeter.services.FileServer;
+          <stringProp name="script">import org.apache.jmeter.services.FileServer;
 import java.io.File;
 
 // Obter o diretório base do File Server
@@ -97,7 +90,7 @@ String baseDir = FileServer.getFileServer().getBaseDir();
 log.info(&quot;Diretório base do File Server: &quot; + baseDir);
 
 // Construir o caminho do arquivo relativo ao diretório base
-String filePath = baseDir + &quot;/protocols/protocolosPAR2101.csv&quot;;
+String filePath = baseDir + &quot;/protocolosPAR2101.csv&quot;;
 log.info(&quot;Diretório do arquivo: &quot; + filePath);
 File file = new File(filePath);
 
@@ -111,7 +104,7 @@ if (file.exists()) {
         </BeanShellPreProcessor>
         <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="usuarios e tokens">
-          <stringProp name="filename">${pathUsers}</stringProp>
+          <stringProp name="filename">usuarios.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">schema,token</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
@@ -122,7 +115,7 @@ if (file.exists()) {
           <stringProp name="shareMode">shareMode.group</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer">
           <stringProp name="ConstantTimer.delay">5000</stringProp>
         </ConstantTimer>
         <hashTree/>
@@ -131,7 +124,7 @@ if (file.exists()) {
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Envio PAR2101 - ${schema}" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Envio PAR2101 - ${schema}">
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">taxbr-solution-webservices/services/rest/uploadLedgerAccountFile?</stringProp>
             <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
@@ -139,9 +132,9 @@ if (file.exists()) {
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
               <collectionProp name="HTTPFileArgs.files">
-                <elementProp name="/data/CAD2002.txt" elementType="HTTPFileArg">
+                <elementProp name="CAD2002.txt" elementType="HTTPFileArg">
                   <stringProp name="File.mimetype">text/plain</stringProp>
-                  <stringProp name="File.path">/data/CAD2002.txt</stringProp>
+                  <stringProp name="File.path">CAD2002.txt</stringProp>
                   <stringProp name="File.paramname">CAD2002</stringProp>
                 </elementProp>
               </collectionProp>
@@ -152,14 +145,14 @@ if (file.exists()) {
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="Debug PostProcessor" enabled="true">
+            <DebugPostProcessor guiclass="TestBeanGUI" testclass="DebugPostProcessor" testname="Debug PostProcessor">
               <boolProp name="displayJMeterProperties">false</boolProp>
               <boolProp name="displayJMeterVariables">true</boolProp>
               <boolProp name="displaySamplerProperties">true</boolProp>
               <boolProp name="displaySystemProperties">false</boolProp>
             </DebugPostProcessor>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">protocolo</stringProp>
               <stringProp name="RegexExtractor.regex">&lt;PROTOCOL_NUMBER&gt;([A-Za-z0-9\-\.]+)</stringProp>
@@ -170,7 +163,7 @@ if (file.exists()) {
               <stringProp name="Sample.scope">all</stringProp>
             </RegexExtractor>
             <hashTree/>
-            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor">
               <stringProp name="filename"></stringProp>
               <stringProp name="parameters"></stringProp>
               <boolProp name="resetInterpreter">false</boolProp>
@@ -191,7 +184,7 @@ String baseDir = FileServer.getFileServer().getBaseDir();
 log.info(&quot;Diretório base do File Server: &quot; + baseDir);
 
 // Construir o caminho do arquivo relativo ao diretório base
-String filePath = baseDir + &quot;/protocols/protocolosPAR2101.csv&quot;;
+String filePath = baseDir + &quot;/protocolosPAR2101.csv&quot;;
 log.info(&quot;Diretório do arquivo: &quot; + filePath);
 File file = new File(filePath);
 
@@ -203,13 +196,16 @@ File file = new File(filePath);
  out.write(protocolo + &quot;;&quot; + token + &quot;;&quot; + schema);
  out.write(System.getProperty(&quot;line.separator&quot;));
  out.close();
+
+
+ 
  fstream.close();</stringProp>
             </BeanShellPostProcessor>
             <hashTree/>
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Usuarios Consulta " enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Usuarios Consulta ">
         <boolProp name="ThreadGroup.delayedStart">true</boolProp>
         <stringProp name="ThreadGroup.num_threads">${qtdUsers}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
@@ -221,11 +217,11 @@ File file = new File(filePath);
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer">
           <stringProp name="ConstantTimer.delay">5000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="contador" enabled="true">
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="contador">
           <stringProp name="CounterConfig.start">1</stringProp>
           <stringProp name="CounterConfig.end">10</stringProp>
           <stringProp name="CounterConfig.incr">1</stringProp>
@@ -234,8 +230,8 @@ File file = new File(filePath);
           <boolProp name="CounterConfig.per_user">false</boolProp>
         </CounterConfig>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
-          <stringProp name="filename">${arqProtocolos}</stringProp>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+          <stringProp name="filename">protocolosPAR2101.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">protocol,token,schema</stringProp>
           <boolProp name="ignoreFirstLine">false</boolProp>
@@ -246,16 +242,16 @@ File file = new File(filePath);
           <stringProp name="shareMode">shareMode.group</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
           <stringProp name="LoopController.loops">250</stringProp>
         </LoopController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Consultas PAR2101 - ${schema}" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Consultas PAR2101 - ${schema}">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Consulta PAR2101 ${schema}" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Consulta PAR2101 ${schema}">
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">taxbr-solution-webservices/services/TrTaxBrEcfMessageResponseImplPort?wsdl</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -280,7 +276,7 @@ File file = new File(filePath);
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+              <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
                 <stringProp name="cacheKey">true</stringProp>
                 <stringProp name="filename"></stringProp>
                 <stringProp name="parameters"></stringProp>
@@ -326,7 +322,7 @@ if (responseBody.contains(palavraChave)) {
           </hashTree>
         </hashTree>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -361,7 +357,7 @@ if (responseBody.contains(palavraChave)) {
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
