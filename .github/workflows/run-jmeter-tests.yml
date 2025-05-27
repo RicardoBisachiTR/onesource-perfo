@@ -1,45 +1,28 @@
-name: Teste de Carga com JMeter
+name: Test JMeter Action
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
-jobs : 
-  performance_test: 
-    runs-on: ubuntu-latest 
-    env :     
-      JMETER_PATH: 'test-plans/CAD2002.jmx'
-       WORKING_DIRECTORY: 
+jobs:
+  action_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
-   
-    Etapas de desempenho: 
-      - usa: actions/checkout@v3 
+      - name: Run JMeter Action on a test
+        uses: rbhadti94/apache-jmeter-action@v0.5.0
+        with:
+          testFilePath: test-plan/LoginQA.jmx
+          outputReportsFolder: reports/
+          args: "--loglevel INFO"
 
-      - nome: Configurar o Python 3.11 
-        usa: actions/setup-python@v4 
-        com: 
-          python-version: 3.11 
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jmeter-test-results
+          path: reports/
 
-      - nome: Configurar-Jmeter 
-        executar: | 
-          python3 -m pip install --upgrade pip 
-          pip3 install -r requirements.txt -q 
-          sudo apt-get update 
-          sudo apt install curl -y 
-          sudo apt install -y default-jdk 
-          sudo curl -O https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.5.tgz 
-          sudo tar -xvf apache-jmeter-5.5.tgz 
-          cd  $GITHUB_WORKSPACE /apache-jmeter-5.5/lib && sudo curl -O https://repo1.maven.org/maven2/kg/apc/cmdrunner/2.2.1/cmdrunner-2.2.1.jar 
-          cd  $GITHUB_WORKSPACE /apache-jmeter-5.5/lib/ext && sudo curl -O https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/1.6/jmeter-plugins-manager-1.6.jar 
-          cd  $GITHUB_WORKSPACE /apache-jmeter-5.5/lib && sudo java -jar cmdrunner-2.2.1.jar --tool org.jmeterplugins.repository.PluginManagerCMD install jpgc-synthesis,jpgc-graphs-basic,jpgc-graphs-additional,jpgc-cmd,jpgc-graphs-dist,jpgc-standard,jpgc-casutg 
-      
-      - name: Executar testes de desempenho 
-        run: | 
-          $GITHUB_WORKSPACE /apache-jmeter-5.5/bin/./jmeter.sh -n -t test-plan/CAD2002.jmx -l result.jtl 
           
-          sudo java -jar $GITHUB_WORKSPACE /apache-jmeter-5.5/lib/cmdrunner-2.2.1.jar --tool Reporter --generate-csv aggregate_report.csv --input-jtl ${{ env.WORKING_DIRECTORY } }/result.jtl --plugin-type AggregateReport 
-          sudo $GITHUB_WORKSPACE /apache-jmeter-5.5/bin/./jmeter.sh -g ${{ env.WORKING_DIRECTORY } }/result.jtl -o${{ env.WORKING_DIRECTORY } }/graph_results 
-
-      
