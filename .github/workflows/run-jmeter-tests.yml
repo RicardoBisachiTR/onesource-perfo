@@ -9,6 +9,9 @@ on:
 jobs:
   jmeter-tests:
     runs-on: ubuntu-latest
+    env : 
+      JMETER_THREAD: 10 
+      
 
     steps:
     - name: Checkout do código
@@ -28,7 +31,7 @@ jobs:
 
     - name: Executar teste JMeter
       run: |
-        ./jmeter/bin/jmeter -n -t test-plans/CAD2002.jmx -l result.jtl
+        ./jmeter/bin/jmeter -n -t test-plans/CAD2002.jmx -l result.jtl -J qtdUsers=${{ env.JMETER_THREAD }}
 
     - name: Upload do resultado
       uses: actions/upload-artifact@v4
