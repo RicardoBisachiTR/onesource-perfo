@@ -71,7 +71,7 @@
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Usuarios Envio" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Usuarios Envio">
         <boolProp name="ThreadGroup.delayedStart">true</boolProp>
         <stringProp name="ThreadGroup.num_threads">${qtdUsers}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
@@ -210,7 +210,7 @@ File file = new File(filePath);
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Usuarios Consulta " enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Usuarios Consulta ">
         <boolProp name="ThreadGroup.delayedStart">true</boolProp>
         <stringProp name="ThreadGroup.num_threads">${qtdUsers}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
@@ -251,7 +251,7 @@ File file = new File(filePath);
           <stringProp name="LoopController.loops">250</stringProp>
         </LoopController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Controller Consultas PAR2101 - ${schema}">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Controller Consultas  ${nameTest} - ${schema}">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
