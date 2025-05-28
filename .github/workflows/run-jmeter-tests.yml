@@ -64,7 +64,10 @@ jobs:
 
     - name: Executar teste JMeter
       run: |
-        ./jmeter/bin/jmeter -JqtdUsuarios=${{env.USUARIOS}} -Jintegracao=${{env.INTEGRACAO}} -n -t test-plans/CAD2002.jmx -l result.jtl
+        JMETER_TEST_FILE=$(jq -r '.endPoint${{env.INTEGRACAO}}' scripts/config.json)
+        echo "Arquivo de teste JMeter: $JMETER_TEST_FILE"
+      
+        ./jmeter/bin/jmeter -JqtdUsuarios=${{env.USUARIOS}} -Jintegracao=${{env.INTEGRACAO}} -JendPointIntegracao=$JMETER_TEST_FILE -n -t test-plans/CAD2002.jmx -l result.jtl
 
     - name: Upload do resultado
       uses: actions/upload-artifact@v4
