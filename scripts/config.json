@@ -1,4 +1,4 @@
 {    
  "endPointCAD2002": "uploadLedgerAccountFile?",
- "endPointCAD2003": "uploadLedgerAccountFile?" 
+ "endPointCAD2003": "uploadCostCenterFile?" 
 }
