@@ -90,5 +90,5 @@ jobs:
       if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.NOME_DO_SECRET }}
+        github_token: ${{ secrets.PAGES_TOKEN }}
         publish_dir: ./html_report/
