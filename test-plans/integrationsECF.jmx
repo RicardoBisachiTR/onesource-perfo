@@ -317,10 +317,12 @@ if (responseBody.contains(palavraChave)) {
     		// Log a message
     		prev.setSuccessful(false);
     		log.info(&quot;Teste excedeu o tempo limite, teste falhou.&quot;);
+    		log.info(schemaAtual);
 	    	// Interrompe todos os threads	    	
     		ctx.getEngine().stopTest();    	
 	}else{	
          log.info(&quot;Processo nao chegou no status esperado, o schema continuará executando.&quot;);
+         log.info(schemaAtual);
 	}
 }
 </stringProp>
