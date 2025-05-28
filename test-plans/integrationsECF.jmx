@@ -294,13 +294,12 @@ String schemaAtual= vars.get(&quot;schema&quot;);
 
 if (responseBody.contains(palavraChave)) {
     // Se a palavra chave for encontrada, interrompemos a thread atual
-    log.info(&quot;Processo chegou no seu status esperado, interrompendo o schema &quot;);
+    log.info(&quot;Processo chegou no seu status esperado, interrompendo o schema &quot;schemaAtual);
     prev.setStopThread(true); // Comando para interromper a thread
 }else if(responseBody.contains(erro)){
  // Processo Finalizou com erro. interrompemos a thread atual
     prev.setSuccessful(false);
-    log.info(&quot;Processo Finalizou com erro. interrompemos o schema &quot;);
-    log.info(schemaAtual);
+    log.info(&quot;Processo Finalizou com erro. interrompemos o schema &quot;schemaAtual);   
     prev.setStopThread(true); // Comando para interromper a thread
     //System.exit(1) // comando para sinaliazar erro na execucao do actions
 } else {
@@ -321,8 +320,7 @@ if (responseBody.contains(palavraChave)) {
 	    	// Interrompe todos os threads	    	
     		ctx.getEngine().stopTest();    	
 	}else{	
-         log.info(&quot;Processo nao chegou no status esperado, o schema continuará executando.&quot;);
-         log.info(schemaAtual);
+         log.info(&quot;Processo nao chegou no status esperado, o schema continuará executando &quot;schemaAtual);         
 	}
 }
 </stringProp>
