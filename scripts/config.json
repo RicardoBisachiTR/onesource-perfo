@@ -1,5 +1,5 @@
 {    
   "scripts": {    
-    "endPointCAD2002": "uploadLedgerAccountFile?",   
+    "endPointCAD2002": "uploadLedgerAccountFile?"   
   }
 }
