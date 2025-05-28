@@ -10,7 +10,7 @@ jobs:
   jmeter-tests:
     runs-on: ubuntu-latest
     env : 
-      JMETER_THREAD: 10 
+      MY_VARIABLE: 10 
       
 
     steps:
@@ -31,7 +31,7 @@ jobs:
 
     - name: Executar teste JMeter
       run: |
-        ./jmeter/bin/jmeter -n -t test-plans/CAD2002.jmx -l result.jtl -JqtdUsers=${{ env.JMETER_THREAD }}
+        ./jmeter/bin/jmeter -n -t test-plans/CAD2002.jmx -l result.jtl
 
     - name: Upload do resultado
       uses: actions/upload-artifact@v4
