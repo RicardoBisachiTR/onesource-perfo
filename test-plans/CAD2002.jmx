@@ -298,6 +298,7 @@ if (responseBody.contains(palavraChave)) {
  // Processo Finalizou com erro. interrompemos a thread atual
     prev.setSuccessful(false);
     log.info(&quot;Processo Finalizou com erro. interrompemos a thread atual&quot;);
+    System.exit(1)
     prev.setStopThread(true); // Comando para interromper a thread
     ctx.getEngine().stopTest();	
     System.exit(1)
