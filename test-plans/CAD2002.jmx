@@ -13,7 +13,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="qtdUsers" elementType="Argument">
             <stringProp name="Argument.name">qtdUsers</stringProp>
-            <stringProp name="Argument.value">${__P(MY_VARIABLE,)}</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="nameTest" elementType="Argument">
