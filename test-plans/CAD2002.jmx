@@ -13,12 +13,12 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="qtdUsers" elementType="Argument">
             <stringProp name="Argument.name">qtdUsers</stringProp>
-            <stringProp name="Argument.value">${__P(hostname,)}</stringProp>
+            <stringProp name="Argument.value">${__P(qtdUsuarios,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="nameTest" elementType="Argument">
             <stringProp name="Argument.name">nameTest</stringProp>
-            <stringProp name="Argument.value">CAD2002</stringProp>
+            <stringProp name="Argument.value">${__P(integracao,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="endPoint" elementType="Argument">

@@ -1,10 +1,43 @@
-name: Teste de Carga com JMeter
+name: Teste de Performance com JMeter
+run-name: Branch->${{ github.ref_name }} Env->${{ inputs.ambiente }} Dir->${{ inputs.diretorio }}
+
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      integracao:
+        description: "Integracao a ser executada"
+        required: true
+        default: "CAD2002"
+        type: choice
+        options:
+          - CAD2002
+          - CAD2003
+          - PAR2101
+          - PAR3005
+          - MOV0002
+          - MOV0001      
+      usuarios:
+        description: 'Quantidade de usuarios (limite maximo 10)'
+        required: true
+        default: "10"
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+          - "5"
+          - "6"
+          - "7"
+          - "8"
+          - "9"
+          - "10"                
+env:
+  USUARIOS: ${{ inputs.usuarios }}
+  INTEGRACAO: ${{ inputs.integracao }}
+  DIRETORIO: ${{ inputs.diretorio }}
+  VERSAO: ${{ inputs.versao }}
 
 jobs:
   jmeter-tests:
@@ -31,7 +64,7 @@ jobs:
 
     - name: Executar teste JMeter
       run: |
-        ./jmeter/bin/jmeter -Jhostname=${{env.MY_VARIABLE}} -n -t test-plans/CAD2002.jmx -l result.jtl
+        ./jmeter/bin/jmeter -JqtdUsuarios=${{env.USUARIOS}} -Jintegracao=${{env.INTEGRACAO}} -n -t test-plans/CAD2002.jmx -l result.jtl
 
     - name: Upload do resultado
       uses: actions/upload-artifact@v4
