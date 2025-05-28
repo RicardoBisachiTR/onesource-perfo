@@ -71,16 +71,17 @@
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
-      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group">
-        <intProp name="ThreadGroup.num_threads">1</intProp>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Usuarios Envio">
+        <boolProp name="ThreadGroup.delayedStart">true</boolProp>
+        <stringProp name="ThreadGroup.num_threads">${qtdUsers}</stringProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
-        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
           <stringProp name="LoopController.loops">1</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
-      </SetupThreadGroup>
+      </ThreadGroup>
       <hashTree>
         <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor">
           <stringProp name="filename"></stringProp>
@@ -107,45 +108,6 @@ if (file.exists()) {
 }</stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="false">
-          <stringProp name="cacheKey">true</stringProp>
-          <stringProp name="filename"></stringProp>
-          <stringProp name="parameters"></stringProp>
-          <stringProp name="script">import org.apache.jmeter.services.FileServer;
-import java.io.File;
-
-// Obter o diretório base do File Server
-String baseDir = FileServer.getFileServer().getBaseDir();
-log.info(&quot;Diretório base do File Server: &quot; + baseDir);
-
-// Construir o caminho do arquivo relativo ao diretório base
-String filePath = baseDir + &quot;/protocolos.csv&quot;;
-log.info(&quot;Diretório do arquivo: &quot; + filePath);
-File file = new File(filePath);
-
-// Verificar se o arquivo existe
-if (file.exists()) {
-    log.info(&quot;O arquivo existe.&quot;);
-    file.delete();
-} else {
-    log.info(&quot;O arquivo não existe.&quot;);
-}</stringProp>
-          <stringProp name="scriptLanguage">groovy</stringProp>
-        </JSR223PreProcessor>
-        <hashTree/>
-      </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Usuarios Envio">
-        <boolProp name="ThreadGroup.delayedStart">true</boolProp>
-        <stringProp name="ThreadGroup.num_threads">${qtdUsers}</stringProp>
-        <intProp name="ThreadGroup.ramp_time">1</intProp>
-        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-          <stringProp name="LoopController.loops">1</stringProp>
-          <boolProp name="LoopController.continue_forever">false</boolProp>
-        </elementProp>
-      </ThreadGroup>
-      <hashTree>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="usuarios e tokens">
           <stringProp name="filename">usuarios.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
