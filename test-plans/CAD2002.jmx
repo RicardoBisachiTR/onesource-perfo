@@ -325,6 +325,31 @@ if (responseBody.contains(palavraChave)) {
                 <stringProp name="scriptLanguage">groovy</stringProp>
               </JSR223PostProcessor>
               <hashTree/>
+              <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener">
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="script">// Groovy script para alterar o código de saída com base em falhas
+if (!props.get(&quot;jmeter.exit.check.done&quot;)) {
+  props.put(&quot;jmeter.exit.check.done&quot;, &quot;true&quot;) // garantir que o script rode apenas uma vez
+  int failures = 0
+
+  // Iterar sobre todos os resultados dos samplers
+  log.info(&quot;Checking for errors...&quot;)
+  SampleResult.getSampleResults().each { result -&gt;
+    if (!result.isSuccessful()) {
+      failures++
+    }
+  }
+
+  if (failures &gt; 0) {
+    log.error(&quot;There were test failures&quot;)
+    System.exit(1)
+  }
+}</stringProp>
+                <stringProp name="scriptLanguage">groovy</stringProp>
+              </JSR223Listener>
+              <hashTree/>
             </hashTree>
           </hashTree>
         </hashTree>
@@ -400,31 +425,6 @@ if (responseBody.contains(palavraChave)) {
         </objProp>
         <stringProp name="filename"></stringProp>
       </ResultCollector>
-      <hashTree/>
-      <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener">
-        <stringProp name="cacheKey">true</stringProp>
-        <stringProp name="filename"></stringProp>
-        <stringProp name="parameters"></stringProp>
-        <stringProp name="script">// Groovy script para alterar o código de saída com base em falhas
-if (!props.get(&quot;jmeter.exit.check.done&quot;)) {
-  props.put(&quot;jmeter.exit.check.done&quot;, &quot;true&quot;) // garantir que o script rode apenas uma vez
-  int failures = 0
-
-  // Iterar sobre todos os resultados dos samplers
-  log.info(&quot;Checking for errors...&quot;)
-  SampleResult.getSampleResults().each { result -&gt;
-    if (!result.isSuccessful()) {
-      failures++
-    }
-  }
-
-  if (failures &gt; 0) {
-    log.error(&quot;There were test failures&quot;)
-    System.exit(1)
-  }
-}</stringProp>
-        <stringProp name="scriptLanguage">groovy</stringProp>
-      </JSR223Listener>
       <hashTree/>
     </hashTree>
   </hashTree>
