@@ -69,6 +69,7 @@ jobs:
         continue-on-error: true
 
   jmeter-tests:
+    needs: CLEANUP
     runs-on: ubuntu-latest
    
     steps:
