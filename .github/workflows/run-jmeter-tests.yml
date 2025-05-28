@@ -85,3 +85,10 @@ jobs:
       with:
         name: jmeter-html-report
         path: html_report/
+        
+    - name: Deploy HTML Report to GitHub Pages
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.NOME_DO_SECRET }}
+        publish_dir: ./html_report/
