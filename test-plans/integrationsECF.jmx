@@ -298,9 +298,8 @@ if (responseBody.contains(palavraChave)) {
  // Processo Finalizou com erro. interrompemos a thread atual
     prev.setSuccessful(false);
     log.info(&quot;Processo Finalizou com erro. interrompemos a thread atual&quot;);
-    //System.exit(1)
     prev.setStopThread(true); // Comando para interromper a thread
-    //System.exit(1)
+    //System.exit(1) // comando para sinaliazar erro na execucao do actions
 } else {
 
 	// Defina o limite de tempo em milissegundos (por exemplo, 1 hora = 3600000 ms)
@@ -315,10 +314,8 @@ if (responseBody.contains(palavraChave)) {
     		// Log a message
     		prev.setSuccessful(false);
     		log.info(&quot;Teste excedeu o tempo limite, teste falhou.&quot;);
-	    	// Interrompe todos os threads
-	    	//System.exit(1)
-    		ctx.getEngine().stopTest();
-    		//System.exit(1)
+	    	// Interrompe todos os threads	    	
+    		ctx.getEngine().stopTest();    	
 	}else{	
          log.info(&quot;Processo nao chegou no status esperado, a thread continuará executando.&quot;);
 	}
@@ -331,7 +328,7 @@ if (responseBody.contains(palavraChave)) {
           </hashTree>
         </hashTree>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -366,7 +363,7 @@ if (responseBody.contains(palavraChave)) {
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -402,31 +399,6 @@ if (responseBody.contains(palavraChave)) {
         </objProp>
         <stringProp name="filename"></stringProp>
       </ResultCollector>
-      <hashTree/>
-      <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener">
-        <stringProp name="cacheKey">true</stringProp>
-        <stringProp name="filename"></stringProp>
-        <stringProp name="parameters"></stringProp>
-        <stringProp name="script">// Groovy script para alterar o código de saída com base em falhas
-if (!props.get(&quot;jmeter.exit.check.done&quot;)) {
-  props.put(&quot;jmeter.exit.check.done&quot;, &quot;true&quot;) // garantir que o script rode apenas uma vez
-  int failures = 0
-
-  // Iterar sobre todos os resultados dos samplers
-  log.info(&quot;Checking for errors...&quot;)
-  SampleResult.getSampleResults().each { result -&gt;
-    if (!result.isSuccessful()) {
-      failures++
-    }
-  }
-
-  if (failures &gt; 0) {
-    log.error(&quot;There were test failures&quot;)
-    System.exit(1)
-  }
-}</stringProp>
-        <stringProp name="scriptLanguage">groovy</stringProp>
-      </JSR223Listener>
       <hashTree/>
     </hashTree>
   </hashTree>
