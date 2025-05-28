@@ -109,7 +109,7 @@ if (file.exists()) {
 }</stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="usuarios e tokens" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="usuarios e tokens">
           <stringProp name="filename">usuarios.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">schema,token</stringProp>
@@ -121,16 +121,16 @@ if (file.exists()) {
           <stringProp name="shareMode">shareMode.group</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+        <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer">
           <stringProp name="ConstantTimer.delay">5000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Controller Envios - Thread  ${__threadNum} - ${schema}" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Controller Envios - Thread  ${__threadNum} - ${schema}">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Envio ${nameTest} - ${schema}" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Envio ${nameTest} - ${schema}">
             <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
             <stringProp name="HTTPSampler.path">taxbr-solution-webservices/services/rest/${endPoint}</stringProp>
             <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
@@ -293,12 +293,12 @@ String erro = &quot;Ocorreu algum erro ao Processar a Requisição&quot;
 
 if (responseBody.contains(palavraChave)) {
     // Se a palavra chave for encontrada, interrompemos a thread atual
-    log.info(&quot;Processo chegou no seu status esperado, interrompendo o schema atual.&quot; +  ${schema});
+    log.info(&quot;Processo chegou no seu status esperado, interrompendo o schema atual.&quot;);
     prev.setStopThread(true); // Comando para interromper a thread
 }else if(responseBody.contains(erro)){
  // Processo Finalizou com erro. interrompemos a thread atual
     prev.setSuccessful(false);
-    log.info(&quot;Processo Finalizou com erro. interrompemos o schema &quot; + ${schema});
+    log.info(&quot;Processo Finalizou com erro. interrompemos o schema.&quot;);
     prev.setStopThread(true); // Comando para interromper a thread
     //System.exit(1) // comando para sinaliazar erro na execucao do actions
 } else {
@@ -318,7 +318,7 @@ if (responseBody.contains(palavraChave)) {
 	    	// Interrompe todos os threads	    	
     		ctx.getEngine().stopTest();    	
 	}else{	
-         log.info(&quot;Processo nao chegou no status esperado, o schema &quot; +  ${schema} + &quot; continuará executando.&quot;);
+         log.info(&quot;Processo nao chegou no status esperado, o schema continuará executando.&quot;);
 	}
 }
 </stringProp>

@@ -54,6 +54,20 @@ env:
   TEMPO: ${{ inputs.tempo }}
 
 jobs:
+  CLEANUP:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cleanup
+        run: |
+          echo ${{ secrets.DEPLOY_PASSWORD }} | sudo -S rm -rf ${GITHUB_WORKSPACE}
+          mkdir ${GITHUB_WORKSPACE}
+
+      - name: Cleanup actions-runner
+        run: |
+          cd ~
+          find . -type d -name 'actions_github_pages_*' -exec sh -c 'echo "Removing directory: {}" && rm -rf "{}"' \;
+        continue-on-error: true
+
   jmeter-tests:
     runs-on: ubuntu-latest
    
