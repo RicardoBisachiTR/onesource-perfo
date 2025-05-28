@@ -88,7 +88,7 @@ jobs:
     
     - name: Modify Config Files in JMeter
       run: |
-        echo "log_level.jmeter=DEBUG" >> jmeter/bin/jmeter.properties 
+        echo "log_level.jmeter=INFO" >> jmeter/bin/jmeter.properties 
 
     - name: Executar teste JMeter
       run: |
