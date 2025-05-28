@@ -32,12 +32,26 @@ on:
           - "7"
           - "8"
           - "9"
-          - "10"                
+          - "10"    
+      tempo:
+        description: 'Tempo maximo em milessegundos)'
+        required: true
+        default: "60000"
+        type: choice
+        options:
+          - "60000"
+          - "600000"
+          - "1200000"
+          - "1800000"
+          - "2400000"
+          - "3000000"
+          - "3600000"             
 env:
   USUARIOS: ${{ inputs.usuarios }}
   INTEGRACAO: ${{ inputs.integracao }}
   DIRETORIO: ${{ inputs.diretorio }}
   VERSAO: ${{ inputs.versao }}
+  TEMPO: ${{ inputs.tempo }}
 
 jobs:
   jmeter-tests:
@@ -64,7 +78,7 @@ jobs:
         JMETER_TEST_FILE=$(jq -r '.endPoint'${{env.INTEGRACAO}} scripts/config.json)
         echo "Arquivo de teste JMeter: $JMETER_TEST_FILE"
       
-        ./jmeter/bin/jmeter -JqtdUsuarios=${{env.USUARIOS}} -Jintegracao=${{env.INTEGRACAO}} -JendPointIntegracao=$JMETER_TEST_FILE -n -t test-plans/integrationsECF.jmx -l result.jtl
+        ./jmeter/bin/jmeter -JqtdUsuarios=${{env.USUARIOS}} -Jintegracao=${{env.INTEGRACAO}} -JtempoLimite=${{env.TEMPO}} -JendPointIntegracao=$JMETER_TEST_FILE -n -t test-plans/integrationsECF.jmx -l result.jtl
 
     - name: Upload do resultado
       uses: actions/upload-artifact@v4

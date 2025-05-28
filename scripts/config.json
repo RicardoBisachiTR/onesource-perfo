@@ -1,4 +1,10 @@
 {    
  "endPointCAD2002": "uploadLedgerAccountFile?",
- "endPointCAD2003": "uploadCostCenterFile?" 
+ "endPointCAD2003": "uploadCostCenterFile?",
+ "endPointPAR2101": "uploadLedgerAccountFile?",
+ "endPointPAR3005": "uploadLedgerAccountFile?",
+ "endPointPAR3017": "uploadLedgerAccountFile?",
+ "endPointMOV0002": "uploadLedgerAccountFile?",
+ "endPointCAD2002": "uploadLedgerAccountFile?",
+ "endPointMOV0001": "uploadLedgerAccountFile?",
 }
