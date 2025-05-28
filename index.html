@@ -94,11 +94,11 @@
                             </tr>
                             <tr>
                                 <td>Start Time</td>
-                                <td>"5/28/25, 10:02 PM"</td>
+                                <td>"5/28/25, 10:10 PM"</td>
                             </tr>
                             <tr>
                                 <td>End Time</td>
-                                <td>"5/28/25, 10:03 PM"</td>
+                                <td>"5/28/25, 10:14 PM"</td>
                             </tr>
                                 <tr>
                                     <td>Filter for display</td>
@@ -203,462 +203,978 @@
 </html>
 <h2>Logs do JMeter</h2>
 <pre>
-2025-05-28 22:02:05,791 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2025-05-28 22:02:06,056 INFO o.a.j.JMeter: Loading user properties from: /home/runner/work/onesource-perfo/onesource-perfo/jmeter/bin/user.properties
-2025-05-28 22:02:06,056 INFO o.a.j.JMeter: Loading system properties from: /home/runner/work/onesource-perfo/onesource-perfo/jmeter/bin/system.properties
-2025-05-28 22:02:06,056 INFO o.a.j.JMeter: Setting JMeter property: qtdUsuarios=10
-2025-05-28 22:02:06,056 INFO o.a.j.JMeter: Setting JMeter property: integracao=CAD2003
-2025-05-28 22:02:06,056 INFO o.a.j.JMeter: Setting JMeter property: tempoLimite=60000
-2025-05-28 22:02:06,056 INFO o.a.j.JMeter: Setting JMeter property: endPointIntegracao=uploadCostCenterFile?
-2025-05-28 22:02:06,102 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
-2025-05-28 22:02:06,102 INFO o.a.j.JMeter: Version 5.6.3
-2025-05-28 22:02:06,102 INFO o.a.j.JMeter: java.version=11.0.27
-2025-05-28 22:02:06,102 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
-2025-05-28 22:02:06,102 INFO o.a.j.JMeter: os.name=Linux
-2025-05-28 22:02:06,102 INFO o.a.j.JMeter: os.arch=amd64
-2025-05-28 22:02:06,102 INFO o.a.j.JMeter: os.version=6.11.0-1014-azure
-2025-05-28 22:02:06,102 INFO o.a.j.JMeter: file.encoding=UTF-8
-2025-05-28 22:02:06,102 INFO o.a.j.JMeter: java.awt.headless=true
-2025-05-28 22:02:06,103 INFO o.a.j.JMeter: Max memory     =1073741824
-2025-05-28 22:02:06,103 INFO o.a.j.JMeter: Available Processors =4
-2025-05-28 22:02:06,213 INFO o.a.j.JMeter: Default Locale=English (EN)
-2025-05-28 22:02:06,214 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2025-05-28 22:02:06,214 INFO o.a.j.JMeter: JMeterHome=/home/runner/work/onesource-perfo/onesource-perfo/jmeter
-2025-05-28 22:02:06,214 INFO o.a.j.JMeter: user.dir  =/home/runner/work/onesource-perfo/onesource-perfo
-2025-05-28 22:02:06,214 INFO o.a.j.JMeter: PWD       =/home/runner/work/onesource-perfo/onesource-perfo
-2025-05-28 22:02:06,214 INFO o.a.j.JMeter: IP: 10.1.0.104 Name: fv-az1910-449 FullName: fv-az1910-449
-2025-05-28 22:02:06,224 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/runner/work/onesource-perfo/onesource-perfo/html_report'
-2025-05-28 22:02:06,226 INFO o.a.j.s.FileServer: Default base='/home/runner/work/onesource-perfo/onesource-perfo'
-2025-05-28 22:02:06,284 INFO o.a.j.s.FileServer: Set new base='/home/runner/work/onesource-perfo/onesource-perfo/test-plans'
-2025-05-28 22:02:06,960 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2025-05-28 22:02:07,221 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2025-05-28 22:02:07,224 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2025-05-28 22:02:07,227 INFO o.a.j.s.SaveService: Loading file: test-plans/integrationsECF.jmx
-2025-05-28 22:02:07,262 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
-2025-05-28 22:02:07,267 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
-2025-05-28 22:02:07,344 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-05-28 22:02:07,345 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-05-28 22:02:07,345 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-05-28 22:02:07,345 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-05-28 22:02:07,345 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2025-05-28 22:02:07,345 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2025-05-28 22:02:07,860 INFO o.a.j.JMeter: Creating summariser <summary>
-2025-05-28 22:02:07,864 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
-2025-05-28 22:02:07,864 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: result.jtl
-2025-05-28 22:02:07,864 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /home/runner/work/onesource-perfo/onesource-perfo/jmeter/bin/reportgenerator.properties
-2025-05-28 22:02:07,864 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
-2025-05-28 22:02:07,868 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
-2025-05-28 22:02:07,869 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
-2025-05-28 22:02:07,870 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
-2025-05-28 22:02:07,870 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
-2025-05-28 22:02:07,870 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
-2025-05-28 22:02:07,870 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
-2025-05-28 22:02:07,870 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
-2025-05-28 22:02:07,870 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
-2025-05-28 22:02:07,870 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
-2025-05-28 22:02:07,873 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
-2025-05-28 22:02:07,873 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
-2025-05-28 22:02:07,873 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
-2025-05-28 22:02:07,873 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
-2025-05-28 22:02:07,873 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
-2025-05-28 22:02:07,873 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
-2025-05-28 22:02:07,874 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2025-05-28 22:02:07,874 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2025-05-28 22:02:07,874 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
-2025-05-28 22:02:07,874 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2025-05-28 22:02:07,875 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
-2025-05-28 22:02:07,875 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
-2025-05-28 22:02:07,875 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
-2025-05-28 22:02:07,875 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
-2025-05-28 22:02:07,875 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
-2025-05-28 22:02:07,875 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
-2025-05-28 22:02:07,947 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2025-05-28 22:02:07,947 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2025-05-28 22:02:07,947 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2025-05-28 22:02:07,999 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2025-05-28 22:02:07,999 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2025-05-28 22:02:09,940 INFO o.a.j.JMeter: Running test (1748469729940)
-2025-05-28 22:02:09,964 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Usuarios Envio
-2025-05-28 22:02:09,964 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Usuarios Envio.
-2025-05-28 22:02:09,964 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2025-05-28 22:02:09,964 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=2 delayedStart=true
-2025-05-28 22:02:09,965 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2025-05-28 22:02:09,965 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: Usuarios Envio to finish before starting next group
-2025-05-28 22:02:09,986 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2025-05-28 22:02:09,986 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
-2025-05-28 22:02:09,986 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2025-05-28 22:02:09,986 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2025-05-28 22:02:09,987 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-1
-2025-05-28 22:02:09,988 INFO o.a.j.s.FileServer: Stored: usuarios.csv Alias: usuarios.csv@922871524
-2025-05-28 22:02:10,015 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:10,016 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:10,019 INFO o.a.j.u.BeanShellTestElement: O arquivo existe.
-2025-05-28 22:02:10,207 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-2
-2025-05-28 22:02:10,210 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:10,211 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:10,212 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
-2025-05-28 22:02:10,441 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-3
-2025-05-28 22:02:10,444 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:10,445 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:10,446 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
-2025-05-28 22:02:10,667 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-4
-2025-05-28 22:02:10,669 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:10,670 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:10,670 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
-2025-05-28 22:02:10,893 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-5
-2025-05-28 22:02:10,897 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:10,897 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:10,898 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
-2025-05-28 22:02:11,114 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-6
-2025-05-28 22:02:11,116 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:11,117 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:11,117 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
-2025-05-28 22:02:11,334 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-7
-2025-05-28 22:02:11,335 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:11,336 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:11,336 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
-2025-05-28 22:02:11,551 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-8
-2025-05-28 22:02:11,554 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:11,554 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:11,554 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
-2025-05-28 22:02:11,765 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-9
-2025-05-28 22:02:11,766 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:11,766 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:11,767 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
-2025-05-28 22:02:11,973 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-10
-2025-05-28 22:02:11,974 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:11,975 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:11,975 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
-2025-05-28 22:02:15,044 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = fv-az1910-449
-2025-05-28 22:02:15,048 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
-2025-05-28 22:02:15,124 INFO o.a.j.s.FileServer: Stored: CAD2003.zip
-2025-05-28 22:02:15,242 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
-2025-05-28 22:02:15,257 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
-2025-05-28 22:02:15,257 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
-2025-05-28 22:02:15,723 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
-2025-05-28 22:02:15,764 INFO o.a.j.u.SSLManager: KeyStore created OK
-2025-05-28 22:02:15,764 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
-2025-05-28 22:02:16,990 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:16,991 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:16,995 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:16,995 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:16,995 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:16,996 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:17,001 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-5
-2025-05-28 22:02:17,001 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-5
-2025-05-28 22:02:17,004 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:17,004 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:17,005 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:17,005 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:17,011 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:17,011 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:17,013 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-8
-2025-05-28 22:02:17,013 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-8
-2025-05-28 22:02:17,014 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:17,014 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:17,014 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:17,014 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:17,020 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-4
-2025-05-28 22:02:17,020 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-4
-2025-05-28 22:02:17,020 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-2
-2025-05-28 22:02:17,020 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-2
-2025-05-28 22:02:17,022 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-1
-2025-05-28 22:02:17,022 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-1
-2025-05-28 22:02:17,025 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-9
-2025-05-28 22:02:17,025 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-9
-2025-05-28 22:02:17,025 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-6
-2025-05-28 22:02:17,025 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-6
-2025-05-28 22:02:17,028 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:17,029 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:17,031 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-3
-2025-05-28 22:02:17,031 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-3
-2025-05-28 22:02:17,031 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-7
-2025-05-28 22:02:17,031 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-7
-2025-05-28 22:02:17,110 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
-2025-05-28 22:02:17,111 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
-2025-05-28 22:02:17,113 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-10
-2025-05-28 22:02:17,113 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-10
-2025-05-28 22:02:17,113 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Usuarios Consulta 
-2025-05-28 22:02:17,113 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Usuarios Consulta .
-2025-05-28 22:02:17,113 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2025-05-28 22:02:17,114 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=10 ramp-up=2 delayedStart=true
-2025-05-28 22:02:17,114 INFO o.a.j.t.ThreadGroup: Started thread group number 2
-2025-05-28 22:02:17,114 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2025-05-28 22:02:17,115 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-1
-2025-05-28 22:02:17,115 INFO o.a.j.s.FileServer: Stored: protocolos.csv Alias: protocolos.csv@1677840544
-2025-05-28 22:02:17,338 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-2
-2025-05-28 22:02:17,561 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-3
-2025-05-28 22:02:17,785 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-4
-2025-05-28 22:02:18,008 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-5
-2025-05-28 22:02:18,232 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-6
-2025-05-28 22:02:18,452 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-7
-2025-05-28 22:02:18,674 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-8
-2025-05-28 22:02:18,896 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-9
-2025-05-28 22:02:19,115 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-10
-2025-05-28 22:02:23,186 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:23,187 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:23,187 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:23,188 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:23,188 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:23,188 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:23,189 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:23,189 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:23,189 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:23,190 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:23,356 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:23,357 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:23,565 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:23,566 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:23,784 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:23,785 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:24,007 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:24,008 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:24,226 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:24,227 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:28,243 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:28,243 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:28,244 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:28,244 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:28,245 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:28,245 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:28,281 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:28,281 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:28,282 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:28,282 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:28,414 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:28,415 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:28,615 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:28,615 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:28,833 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:28,833 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:29,056 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:29,057 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:29,275 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:29,276 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:33,296 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:33,297 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:33,333 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:33,333 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:33,335 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:33,336 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:33,337 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:33,337 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:33,338 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:33,338 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:33,461 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:33,461 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:33,661 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:33,662 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:33,882 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:33,882 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:34,103 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:34,104 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:34,324 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:34,324 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:38,388 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:38,388 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:38,388 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:38,388 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:38,396 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:38,397 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:38,398 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:38,398 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:38,399 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:38,399 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:38,506 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:38,507 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:38,706 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:38,707 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:38,927 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:38,928 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:39,151 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:39,151 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:39,367 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:39,368 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:43,446 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:43,447 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:43,449 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:43,449 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:43,485 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:43,485 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:43,485 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:43,485 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:43,485 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:43,485 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:43,552 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:43,552 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:43,756 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:43,757 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:43,973 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:43,974 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:44,200 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:44,200 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:44,415 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:44,415 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:48,539 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:48,539 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:48,539 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:48,539 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:48,549 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:48,550 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:48,553 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:48,553 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:48,556 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:48,556 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:48,599 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:48,599 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:48,804 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:48,804 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:49,021 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:49,021 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:49,247 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:49,247 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:49,461 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:49,462 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:53,591 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:53,591 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:53,596 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:53,596 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:53,597 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:53,597 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:53,605 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:53,606 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:53,606 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:53,606 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:53,644 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:53,644 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:53,848 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:53,848 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:54,068 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:54,069 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:54,293 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:54,294 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:54,506 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:54,507 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:58,654 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:58,654 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:58,657 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:58,657 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:58,658 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:58,658 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:58,693 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:58,693 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:58,693 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:58,693 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:58,697 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:58,697 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:58,896 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:58,896 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:59,114 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:59,114 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:59,341 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:59,341 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:02:59,551 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:02:59,551 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:03,708 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:03:03,708 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:03,753 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:03:03,754 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:03,754 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:03:03,754 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:03,754 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:03:03,755 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:03:03,755 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:03,755 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:03,756 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:03:03,756 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:03,943 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:03:03,943 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:04,164 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:03:04,164 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:04,390 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:03:04,391 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:04,600 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
-2025-05-28 22:03:04,600 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
-2025-05-28 22:03:08,815 INFO o.a.j.e.J.JSR223 PostProcessor: Teste excedeu o tempo limite, teste falhou.
-2025-05-28 22:03:08,815 INFO o.a.j.e.J.JSR223 PostProcessor: Teste excedeu o tempo limite, teste falhou.
-2025-05-28 22:03:08,815 INFO o.a.j.e.J.JSR223 PostProcessor: Teste excedeu o tempo limite, teste falhou.
-2025-05-28 22:03:08,815 INFO o.a.j.e.J.JSR223 PostProcessor: schema_9
-2025-05-28 22:03:08,815 INFO o.a.j.e.J.JSR223 PostProcessor: schema_1
-2025-05-28 22:03:08,815 INFO o.a.j.e.J.JSR223 PostProcessor: schema_8
-2025-05-28 22:03:08,816 INFO o.a.j.e.J.JSR223 PostProcessor: Teste excedeu o tempo limite, teste falhou.
-2025-05-28 22:03:08,816 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-6
-2025-05-28 22:03:08,816 INFO o.a.j.e.J.JSR223 PostProcessor: schema_5
-2025-05-28 22:03:08,816 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-5
-2025-05-28 22:03:08,816 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-1
-2025-05-28 22:03:08,816 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-6
-2025-05-28 22:03:08,816 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-1
-2025-05-28 22:03:08,816 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-5
-2025-05-28 22:03:08,816 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-2
-2025-05-28 22:03:08,817 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-2
-2025-05-28 22:03:08,846 INFO o.a.j.e.J.JSR223 PostProcessor: Teste excedeu o tempo limite, teste falhou.
-2025-05-28 22:03:08,846 INFO o.a.j.e.J.JSR223 PostProcessor: Teste excedeu o tempo limite, teste falhou.
-2025-05-28 22:03:08,846 INFO o.a.j.e.J.JSR223 PostProcessor: schema_4
-2025-05-28 22:03:08,846 INFO o.a.j.e.J.JSR223 PostProcessor: schema_2
-2025-05-28 22:03:08,846 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-3
-2025-05-28 22:03:08,846 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-4
-2025-05-28 22:03:08,846 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-3
-2025-05-28 22:03:08,846 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-4
-2025-05-28 22:03:08,988 INFO o.a.j.e.J.JSR223 PostProcessor: Teste excedeu o tempo limite, teste falhou.
-2025-05-28 22:03:08,988 INFO o.a.j.e.J.JSR223 PostProcessor: schema_6
-2025-05-28 22:03:08,989 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-7
-2025-05-28 22:03:08,989 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-7
-2025-05-28 22:03:09,209 INFO o.a.j.e.J.JSR223 PostProcessor: Teste excedeu o tempo limite, teste falhou.
-2025-05-28 22:03:09,209 INFO o.a.j.e.J.JSR223 PostProcessor: schema_3
-2025-05-28 22:03:09,209 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-8
-2025-05-28 22:03:09,209 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-8
-2025-05-28 22:03:09,436 INFO o.a.j.e.J.JSR223 PostProcessor: Teste excedeu o tempo limite, teste falhou.
-2025-05-28 22:03:09,436 INFO o.a.j.e.J.JSR223 PostProcessor: schema_7
-2025-05-28 22:03:09,436 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-9
-2025-05-28 22:03:09,436 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-9
-2025-05-28 22:03:09,647 INFO o.a.j.e.J.JSR223 PostProcessor: Teste excedeu o tempo limite, teste falhou.
-2025-05-28 22:03:09,647 INFO o.a.j.e.J.JSR223 PostProcessor: schema_10
-2025-05-28 22:03:09,647 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-10
-2025-05-28 22:03:09,648 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-10
-2025-05-28 22:03:09,648 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2025-05-28 22:03:09,648 INFO o.a.j.s.FileServer: Close: protocolos.csv@1677840544
-2025-05-28 22:03:09,649 INFO o.a.j.s.FileServer: Close: usuarios.csv@922871524
-2025-05-28 22:03:09,652 INFO o.a.j.r.Summariser: summary =     10 in 00:01:00 =    0.2/s Avg:  5064 Min:  5044 Max:  5106 Err:    10 (100.00%)
-2025-05-28 22:03:09,652 INFO o.a.j.JMeter: Generating Dashboard
-2025-05-28 22:03:09,652 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
-2025-05-28 22:03:09,660 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
-2025-05-28 22:03:09,738 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
-2025-05-28 22:03:09,738 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
-2025-05-28 22:03:09,740 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
-2025-05-28 22:03:09,740 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
-2025-05-28 22:03:09,746 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
-2025-05-28 22:03:09,747 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
-2025-05-28 22:03:09,747 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
-2025-05-28 22:03:09,747 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
-2025-05-28 22:03:09,761 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
-2025-05-28 22:03:09,762 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
-2025-05-28 22:03:09,762 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
-2025-05-28 22:03:09,762 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
-2025-05-28 22:03:09,766 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
-2025-05-28 22:03:09,766 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 910 samples
-2025-05-28 22:03:09,766 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
-2025-05-28 22:03:09,766 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
-2025-05-28 22:03:09,766 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
-2025-05-28 22:03:09,770 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
-2025-05-28 22:03:09,772 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
-2025-05-28 22:03:09,773 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
-2025-05-28 22:03:09,787 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
-2025-05-28 22:03:09,787 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
-2025-05-28 22:03:09,788 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
-2025-05-28 22:03:09,788 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
-2025-05-28 22:03:09,788 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 3450 samples
-2025-05-28 22:03:09,788 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 690 samples
-2025-05-28 22:03:09,788 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 230 samples
-2025-05-28 22:03:09,789 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 230 samples produced in 109ms on channel 0
-2025-05-28 22:03:09,789 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
-2025-05-28 22:03:09,880 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
-2025-05-28 22:03:09,880 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
-2025-05-28 22:03:09,881 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
-2025-05-28 22:03:09,881 INFO o.a.j.r.d.JsonExporter: Checking output folder
-2025-05-28 22:03:09,882 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /home/runner/work/onesource-perfo/onesource-perfo/html_report/statistics.json
-2025-05-28 22:03:09,940 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
-2025-05-28 22:03:09,944 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /home/runner/work/onesource-perfo/onesource-perfo/html_report
-2025-05-28 22:03:10,171 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /home/runner/work/onesource-perfo/onesource-perfo/html_report, creating folder structure
-2025-05-28 22:03:10,173 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/home/runner/work/onesource-perfo/onesource-perfo/jmeter/bin/report-template' to '/home/runner/work/onesource-perfo/onesource-perfo/html_report', got message: /home/runner/work/onesource-perfo/onesource-perfo/html_report, found non empty folder with following content [/home/runner/work/onesource-perfo/onesource-perfo/html_report/statistics.json], will be ignored
-2025-05-28 22:03:10,409 INFO o.a.j.JMeter: Dashboard generated
+2025-05-28 22:10:00,923 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-05-28 22:10:01,111 INFO o.a.j.JMeter: Loading user properties from: /home/runner/work/onesource-perfo/onesource-perfo/jmeter/bin/user.properties
+2025-05-28 22:10:01,111 INFO o.a.j.JMeter: Loading system properties from: /home/runner/work/onesource-perfo/onesource-perfo/jmeter/bin/system.properties
+2025-05-28 22:10:01,112 INFO o.a.j.JMeter: Setting JMeter property: qtdUsuarios=10
+2025-05-28 22:10:01,112 INFO o.a.j.JMeter: Setting JMeter property: integracao=CAD2003
+2025-05-28 22:10:01,112 INFO o.a.j.JMeter: Setting JMeter property: tempoLimite=600000
+2025-05-28 22:10:01,112 INFO o.a.j.JMeter: Setting JMeter property: endPointIntegracao=uploadCostCenterFile?
+2025-05-28 22:10:01,146 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-05-28 22:10:01,146 INFO o.a.j.JMeter: Version 5.6.3
+2025-05-28 22:10:01,146 INFO o.a.j.JMeter: java.version=11.0.27
+2025-05-28 22:10:01,146 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-05-28 22:10:01,146 INFO o.a.j.JMeter: os.name=Linux
+2025-05-28 22:10:01,146 INFO o.a.j.JMeter: os.arch=amd64
+2025-05-28 22:10:01,146 INFO o.a.j.JMeter: os.version=6.11.0-1014-azure
+2025-05-28 22:10:01,147 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-05-28 22:10:01,147 INFO o.a.j.JMeter: java.awt.headless=true
+2025-05-28 22:10:01,147 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-05-28 22:10:01,147 INFO o.a.j.JMeter: Available Processors =4
+2025-05-28 22:10:01,210 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-05-28 22:10:01,210 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-05-28 22:10:01,211 INFO o.a.j.JMeter: JMeterHome=/home/runner/work/onesource-perfo/onesource-perfo/jmeter
+2025-05-28 22:10:01,211 INFO o.a.j.JMeter: user.dir  =/home/runner/work/onesource-perfo/onesource-perfo
+2025-05-28 22:10:01,211 INFO o.a.j.JMeter: PWD       =/home/runner/work/onesource-perfo/onesource-perfo
+2025-05-28 22:10:01,211 INFO o.a.j.JMeter: IP: 10.1.0.5 Name: fv-az790-707 FullName: fv-az790-707.ukisicaom3cuje4zb3kzgpq2we.ex.internal.cloudapp.net
+2025-05-28 22:10:01,222 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/runner/work/onesource-perfo/onesource-perfo/html_report'
+2025-05-28 22:10:01,224 INFO o.a.j.s.FileServer: Default base='/home/runner/work/onesource-perfo/onesource-perfo'
+2025-05-28 22:10:01,239 INFO o.a.j.s.FileServer: Set new base='/home/runner/work/onesource-perfo/onesource-perfo/test-plans'
+2025-05-28 22:10:01,658 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-05-28 22:10:01,767 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-05-28 22:10:01,770 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-05-28 22:10:01,772 INFO o.a.j.s.SaveService: Loading file: test-plans/integrationsECF.jmx
+2025-05-28 22:10:01,808 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2025-05-28 22:10:01,814 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2025-05-28 22:10:01,884 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-28 22:10:01,884 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-28 22:10:01,884 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-28 22:10:01,884 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-05-28 22:10:01,884 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-05-28 22:10:01,884 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-05-28 22:10:02,238 INFO o.a.j.JMeter: Creating summariser <summary>
+2025-05-28 22:10:02,241 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2025-05-28 22:10:02,242 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: result.jtl
+2025-05-28 22:10:02,242 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /home/runner/work/onesource-perfo/onesource-perfo/jmeter/bin/reportgenerator.properties
+2025-05-28 22:10:02,242 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2025-05-28 22:10:02,245 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2025-05-28 22:10:02,247 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2025-05-28 22:10:02,247 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2025-05-28 22:10:02,247 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2025-05-28 22:10:02,247 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2025-05-28 22:10:02,247 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2025-05-28 22:10:02,248 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2025-05-28 22:10:02,248 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2025-05-28 22:10:02,248 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2025-05-28 22:10:02,251 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2025-05-28 22:10:02,251 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-28 22:10:02,251 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2025-05-28 22:10:02,251 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2025-05-28 22:10:02,251 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2025-05-28 22:10:02,251 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2025-05-28 22:10:02,251 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-28 22:10:02,251 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-28 22:10:02,252 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-28 22:10:02,252 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-05-28 22:10:02,252 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2025-05-28 22:10:02,252 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2025-05-28 22:10:02,253 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2025-05-28 22:10:02,253 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2025-05-28 22:10:02,253 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2025-05-28 22:10:02,253 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2025-05-28 22:10:02,304 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-05-28 22:10:02,306 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-05-28 22:10:02,306 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-05-28 22:10:02,336 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-05-28 22:10:02,336 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-05-28 22:10:03,445 INFO o.a.j.JMeter: Running test (1748470203444)
+2025-05-28 22:10:03,468 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Usuarios Envio
+2025-05-28 22:10:03,468 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Usuarios Envio.
+2025-05-28 22:10:03,468 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-05-28 22:10:03,468 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=10 ramp-up=2 delayedStart=true
+2025-05-28 22:10:03,469 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-05-28 22:10:03,469 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: Usuarios Envio to finish before starting next group
+2025-05-28 22:10:03,499 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-05-28 22:10:03,499 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-05-28 22:10:03,499 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-05-28 22:10:03,499 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-05-28 22:10:03,500 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-1
+2025-05-28 22:10:03,501 INFO o.a.j.s.FileServer: Stored: usuarios.csv Alias: usuarios.csv@922871524
+2025-05-28 22:10:03,528 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:03,529 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:03,533 INFO o.a.j.u.BeanShellTestElement: O arquivo existe.
+2025-05-28 22:10:03,717 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-2
+2025-05-28 22:10:03,720 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:03,720 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:03,721 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
+2025-05-28 22:10:03,942 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-3
+2025-05-28 22:10:03,945 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:03,945 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:03,946 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
+2025-05-28 22:10:04,168 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-4
+2025-05-28 22:10:04,170 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:04,170 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:04,171 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
+2025-05-28 22:10:04,392 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-5
+2025-05-28 22:10:04,394 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:04,395 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:04,396 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
+2025-05-28 22:10:04,615 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-6
+2025-05-28 22:10:04,618 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:04,618 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:04,619 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
+2025-05-28 22:10:04,837 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-7
+2025-05-28 22:10:04,839 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:04,839 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:04,840 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
+2025-05-28 22:10:05,055 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-8
+2025-05-28 22:10:05,057 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:05,057 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:05,058 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
+2025-05-28 22:10:05,271 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-9
+2025-05-28 22:10:05,273 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:05,273 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:05,274 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
+2025-05-28 22:10:05,476 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Envio 1-10
+2025-05-28 22:10:05,478 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:05,478 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo protocolo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:05,479 INFO o.a.j.u.BeanShellTestElement: O arquivo não existe.
+2025-05-28 22:10:08,554 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = fv-az790-707
+2025-05-28 22:10:08,558 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-05-28 22:10:08,611 INFO o.a.j.s.FileServer: Stored: CAD2003.zip
+2025-05-28 22:10:08,750 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2025-05-28 22:10:08,773 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2025-05-28 22:10:08,773 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2025-05-28 22:10:09,131 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2025-05-28 22:10:09,147 INFO o.a.j.u.SSLManager: KeyStore created OK
+2025-05-28 22:10:09,147 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2025-05-28 22:10:09,999 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:09,999 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:10,001 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:10,001 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:10,005 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:10,006 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:10,007 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-2
+2025-05-28 22:10:10,007 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-2
+2025-05-28 22:10:10,010 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-4
+2025-05-28 22:10:10,011 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-4
+2025-05-28 22:10:10,011 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-3
+2025-05-28 22:10:10,011 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-3
+2025-05-28 22:10:10,034 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:10,034 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:10,034 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:10,034 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:10,039 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-7
+2025-05-28 22:10:10,040 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-7
+2025-05-28 22:10:10,042 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:10,042 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:10,042 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:10,042 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:10,043 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-1
+2025-05-28 22:10:10,043 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-1
+2025-05-28 22:10:10,047 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-6
+2025-05-28 22:10:10,047 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-6
+2025-05-28 22:10:10,047 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-5
+2025-05-28 22:10:10,048 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-5
+2025-05-28 22:10:10,189 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:10,189 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:10,192 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-8
+2025-05-28 22:10:10,192 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-8
+2025-05-28 22:10:10,387 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:10,388 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:10,390 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-9
+2025-05-28 22:10:10,390 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-9
+2025-05-28 22:10:10,595 INFO o.a.j.u.BeanShellTestElement: Diretório base do File Server: /home/runner/work/onesource-perfo/onesource-perfo/test-plans
+2025-05-28 22:10:10,595 INFO o.a.j.u.BeanShellTestElement: Diretório do arquivo: /home/runner/work/onesource-perfo/onesource-perfo/test-plans/protocolos.csv
+2025-05-28 22:10:10,597 INFO o.a.j.t.JMeterThread: Thread is done: Usuarios Envio 1-10
+2025-05-28 22:10:10,598 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Envio 1-10
+2025-05-28 22:10:10,598 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Usuarios Consulta 
+2025-05-28 22:10:10,598 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group Usuarios Consulta .
+2025-05-28 22:10:10,598 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-05-28 22:10:10,598 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=10 ramp-up=2 delayedStart=true
+2025-05-28 22:10:10,598 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2025-05-28 22:10:10,598 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-05-28 22:10:10,599 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-1
+2025-05-28 22:10:10,600 INFO o.a.j.s.FileServer: Stored: protocolos.csv Alias: protocolos.csv@1677840544
+2025-05-28 22:10:10,823 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-2
+2025-05-28 22:10:11,046 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-3
+2025-05-28 22:10:11,270 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-4
+2025-05-28 22:10:11,493 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-5
+2025-05-28 22:10:11,716 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-6
+2025-05-28 22:10:11,936 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-7
+2025-05-28 22:10:12,158 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-8
+2025-05-28 22:10:12,379 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-9
+2025-05-28 22:10:12,600 INFO o.a.j.t.JMeterThread: Thread started: Usuarios Consulta  2-10
+2025-05-28 22:10:16,717 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:16,718 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:16,718 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:16,720 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:16,720 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:16,721 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:16,721 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:16,721 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:16,722 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:16,722 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:16,827 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:16,828 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:17,044 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:17,044 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:17,265 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:17,266 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:17,487 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:17,488 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:17,705 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:17,706 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:21,813 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:21,813 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:21,814 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:21,814 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:21,823 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:21,823 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:21,824 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:21,824 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:21,824 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:21,825 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:21,875 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:21,876 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:22,092 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:22,092 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:22,313 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:22,314 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:22,534 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:22,535 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:22,751 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:22,752 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:26,868 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:26,869 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:26,869 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:26,869 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:26,873 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:26,873 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:26,874 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:26,874 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:26,874 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:26,874 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:26,918 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:26,919 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:27,139 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:27,140 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:27,358 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:27,358 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:27,582 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:27,583 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:27,800 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:27,800 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:31,970 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:31,970 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:31,970 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:31,970 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:31,971 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:31,971 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:31,971 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:31,971 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:31,972 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:31,972 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:31,972 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:31,973 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:32,188 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:32,188 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:32,404 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:32,404 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:32,628 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:32,628 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:32,846 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:32,846 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:37,024 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:37,024 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:37,024 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:37,025 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:37,025 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:37,025 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:37,026 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:37,026 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:37,026 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:37,026 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:37,027 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:37,027 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:37,233 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:37,234 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:37,450 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:37,450 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:37,674 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:37,674 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:37,892 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:37,892 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:42,121 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:42,121 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:42,121 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:42,121 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:42,121 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:42,121 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:42,121 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:42,122 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:42,122 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:42,122 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:42,123 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:42,123 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:42,280 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:42,280 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:42,494 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:42,495 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:42,717 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:42,718 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:42,935 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:42,936 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:47,177 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:47,177 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:47,177 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:47,177 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:47,177 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:47,177 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:47,178 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:47,177 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:47,178 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:47,178 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:47,178 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:47,178 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:47,326 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:47,326 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:47,538 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:47,538 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:47,762 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:47,763 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:47,980 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:47,981 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:52,231 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:52,232 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:52,232 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:52,232 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:52,232 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:52,232 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:52,339 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:52,339 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:52,339 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:52,339 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:52,340 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:52,340 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:52,372 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:52,372 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:52,582 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:52,582 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:52,810 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:52,811 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:53,027 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:53,027 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:57,278 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:57,279 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:57,281 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:57,281 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:57,283 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:57,283 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:57,389 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:57,389 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:57,389 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:57,389 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:57,391 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:57,392 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:57,420 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:57,421 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:57,626 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:57,626 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:57,857 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:57,857 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:10:58,073 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:10:58,073 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:02,373 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:02,374 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:02,438 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:02,439 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:02,440 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:02,440 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:02,454 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:02,455 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:02,455 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:02,455 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:02,467 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:02,467 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:02,474 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:02,475 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:02,672 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:02,672 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:02,905 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:02,905 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:03,139 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:03,139 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:07,424 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:07,424 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:07,484 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:07,485 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:07,487 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:07,487 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:07,501 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:07,502 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:07,507 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:07,508 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:07,514 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:07,514 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:07,518 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:07,519 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:07,715 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:07,716 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:07,952 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:07,953 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:08,184 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:08,184 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:12,474 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:12,474 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:12,585 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:12,585 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:12,585 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:12,585 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:12,585 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:12,585 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:12,588 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:12,588 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:12,588 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:12,588 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:12,762 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:12,762 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:13,002 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:13,002 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:13,246 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:13,247 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:13,398 INFO o.a.j.e.J.JSR223 PostProcessor: Processo chegou no seu status esperado, interrompendo o schema 
+2025-05-28 22:11:13,398 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-2
+2025-05-28 22:11:13,399 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-2
+2025-05-28 22:11:17,611 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:17,611 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:17,705 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:17,705 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:17,705 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:17,705 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:17,705 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:17,706 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:17,706 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:17,706 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:17,707 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:17,708 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:17,868 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:17,868 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:18,107 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:18,108 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:18,351 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:18,351 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:22,658 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:22,658 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:22,799 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:22,799 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:22,800 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:22,800 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:22,806 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:22,806 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:22,807 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:22,807 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:22,809 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:22,809 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:22,917 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:22,917 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:23,153 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:23,154 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:23,399 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:23,399 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:27,706 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:27,706 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:27,852 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:27,852 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:27,852 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:27,852 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:27,898 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:27,898 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:27,898 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:27,899 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:27,899 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:27,899 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:27,962 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:27,963 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:28,202 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:28,202 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:28,443 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:28,444 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:32,752 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:32,752 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:32,911 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:32,911 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:32,947 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:32,947 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:32,948 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:32,948 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:32,964 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:32,964 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:32,970 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:32,970 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:33,011 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:33,012 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:33,248 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:33,249 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:33,489 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:33,490 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:37,801 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:37,801 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:37,958 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:37,958 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:37,994 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:37,994 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:38,013 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:38,013 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:38,043 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:38,043 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:38,044 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:38,044 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:38,060 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:38,060 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:38,294 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:38,295 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:38,535 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:38,535 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:42,850 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:42,851 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:43,005 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:43,005 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:43,091 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:43,091 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:43,097 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:43,098 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:43,098 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:43,098 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:43,099 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:43,099 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:43,108 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:43,109 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:43,340 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:43,340 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:43,581 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:43,581 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:47,897 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:47,897 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:48,052 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:48,053 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:48,150 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:48,150 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:48,150 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:48,150 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:48,187 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:48,187 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:48,188 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:48,188 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:48,188 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:48,188 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:48,386 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:48,386 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:48,627 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:48,627 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:52,943 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:52,944 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:53,102 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:53,102 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:53,199 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:53,200 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:53,200 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:53,200 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:53,236 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:53,236 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:53,236 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:53,236 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:53,240 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:53,240 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:53,435 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:53,435 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:53,673 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:53,673 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:57,993 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:57,994 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:58,149 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:58,150 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:58,288 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:58,288 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:58,288 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:58,288 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:58,299 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:58,299 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:58,299 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:58,299 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:58,302 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:58,302 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:58,484 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:58,484 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:11:58,718 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:11:58,718 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:03,201 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:03,201 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:03,340 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:03,340 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:03,347 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:03,347 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:03,404 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:03,405 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:03,407 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:03,407 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:03,529 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:03,529 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:03,771 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:03,772 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:03,961 INFO o.a.j.e.J.JSR223 PostProcessor: Processo chegou no seu status esperado, interrompendo o schema 
+2025-05-28 22:12:03,961 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-1
+2025-05-28 22:12:03,962 INFO o.a.j.r.Summariser: summary +      2 in 00:02:01 =    0.0/s Avg:  5940 Min:  5913 Max:  5967 Err:     0 (0.00%) Active: 9 Started: 20 Finished: 11
+2025-05-28 22:12:03,963 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-1
+2025-05-28 22:12:04,407 INFO o.a.j.e.J.JSR223 PostProcessor: Processo chegou no seu status esperado, interrompendo o schema 
+2025-05-28 22:12:04,407 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-3
+2025-05-28 22:12:04,407 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-3
+2025-05-28 22:12:08,247 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:08,247 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:08,390 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:08,391 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:08,394 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:08,394 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:08,498 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:08,498 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:08,498 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:08,498 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:08,576 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:08,577 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:08,817 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:08,818 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:13,294 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:13,295 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:13,441 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:13,442 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:13,477 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:13,478 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:13,543 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:13,544 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:13,546 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:13,546 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:13,628 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:13,628 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:13,863 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:13,863 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:18,433 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:18,434 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:18,527 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:18,527 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:18,560 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:18,560 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:18,629 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:18,630 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:18,669 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:18,669 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:18,713 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:18,713 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:18,949 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:18,949 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:23,482 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:23,482 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:23,575 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:23,575 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:23,651 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:23,652 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:23,681 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:23,681 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:23,716 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:23,716 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:23,760 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:23,760 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:23,995 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:23,996 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:28,532 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:28,532 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:28,620 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:28,620 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:28,697 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:28,697 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:28,761 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:28,761 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:28,770 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:28,771 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:28,807 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:28,807 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:29,042 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:29,042 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:33,582 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:33,582 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:33,668 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:33,668 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:33,784 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:33,785 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:33,808 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:33,809 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:33,814 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:33,815 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:33,851 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:33,851 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:34,088 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:34,089 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:38,630 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:38,630 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:38,717 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:38,717 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:38,880 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:38,881 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:38,881 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:38,882 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:38,904 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:38,904 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:38,905 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:38,905 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:39,135 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:39,135 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:43,675 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:43,676 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:43,764 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:43,764 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:43,929 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:43,929 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:43,930 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:43,930 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:43,951 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:43,951 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:43,951 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:43,951 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:44,183 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:44,183 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:48,721 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:48,722 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:48,812 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:48,812 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:49,022 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:49,022 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:49,022 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:49,023 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:49,023 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:49,023 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:49,023 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:49,023 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:49,232 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:49,233 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:53,770 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:53,770 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:53,858 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:53,858 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:54,076 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:54,076 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:54,076 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:54,076 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:54,090 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:54,090 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:54,091 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:54,091 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:54,278 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:54,278 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:58,816 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:58,817 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:58,906 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:58,907 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:59,168 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:59,169 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:59,169 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:59,169 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:59,169 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:59,169 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:59,332 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:12:59,332 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:12:59,992 INFO o.a.j.e.J.JSR223 PostProcessor: Processo chegou no seu status esperado, interrompendo o schema 
+2025-05-28 22:12:59,992 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-4
+2025-05-28 22:12:59,992 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-4
+2025-05-28 22:13:03,867 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:03,868 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:03,954 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:03,954 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:04,220 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:04,220 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:04,221 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:04,221 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:04,222 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:04,222 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:04,379 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:04,379 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:08,923 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:08,923 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:09,000 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:09,000 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:09,314 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:09,314 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:09,314 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:09,314 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:09,314 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:09,315 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:09,425 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:09,425 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:13,971 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:13,971 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:14,049 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:14,049 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:14,366 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:14,366 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:14,366 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:14,366 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:14,366 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:14,366 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:14,473 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:14,473 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:19,108 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:19,108 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:19,160 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:19,160 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:19,515 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:19,515 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:19,517 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:19,517 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:19,518 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:19,518 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:19,584 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:19,584 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:24,152 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:24,153 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:24,205 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:24,205 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:24,567 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:24,567 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:24,576 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:24,576 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:24,577 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:24,577 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:24,630 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:24,630 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:29,682 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:29,682 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:29,691 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:29,691 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:29,692 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:29,692 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:29,692 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:29,692 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:30,060 INFO o.a.j.e.J.JSR223 PostProcessor: Processo chegou no seu status esperado, interrompendo o schema 
+2025-05-28 22:13:30,060 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-5
+2025-05-28 22:13:30,061 INFO o.a.j.r.Summariser: summary +      3 in 00:01:26 =    0.0/s Avg:  5952 Min:  5853 Max:  6104 Err:     0 (0.00%) Active: 6 Started: 20 Finished: 14
+2025-05-28 22:13:30,061 INFO o.a.j.e.J.JSR223 PostProcessor: Processo chegou no seu status esperado, interrompendo o schema 
+2025-05-28 22:13:30,061 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-7
+2025-05-28 22:13:30,061 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-7
+2025-05-28 22:13:30,061 INFO o.a.j.r.Summariser: summary =      5 in 00:03:27 =    0.0/s Avg:  5947 Min:  5853 Max:  6104 Err:     0 (0.00%)
+2025-05-28 22:13:30,061 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-5
+2025-05-28 22:13:34,739 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:34,739 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:34,743 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:34,743 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:34,749 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:34,749 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:34,751 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:34,751 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:39,832 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:39,833 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:39,834 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:39,834 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:39,834 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:39,834 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:39,834 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:39,834 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:44,883 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:44,883 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:44,886 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:44,886 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:44,886 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:44,886 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:44,886 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:44,886 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:49,972 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:49,973 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:49,983 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:49,983 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:49,983 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:49,983 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:49,987 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:49,987 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:55,025 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:55,026 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:55,033 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:55,033 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:55,034 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:55,034 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:13:55,034 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:13:55,034 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:00,126 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:00,126 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:00,127 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:00,128 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:01,229 INFO o.a.j.e.J.JSR223 PostProcessor: Processo chegou no seu status esperado, interrompendo o schema 
+2025-05-28 22:14:01,229 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-8
+2025-05-28 22:14:01,230 INFO o.a.j.r.Summariser: summary +      2 in 00:00:31 =    0.1/s Avg:  6051 Min:  5908 Max:  6194 Err:     0 (0.00%) Active: 4 Started: 20 Finished: 16
+2025-05-28 22:14:01,230 INFO o.a.j.r.Summariser: summary =      7 in 00:03:58 =    0.0/s Avg:  5977 Min:  5853 Max:  6194 Err:     0 (0.00%)
+2025-05-28 22:14:01,230 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-8
+2025-05-28 22:14:01,276 INFO o.a.j.e.J.JSR223 PostProcessor: Processo chegou no seu status esperado, interrompendo o schema 
+2025-05-28 22:14:01,276 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-6
+2025-05-28 22:14:01,276 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-6
+2025-05-28 22:14:05,175 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:05,175 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:05,176 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:05,176 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:10,288 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:10,288 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:10,288 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:10,288 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:15,383 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:15,383 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:15,383 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:15,383 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:20,512 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:20,512 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:20,532 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:20,532 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:25,565 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:25,565 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:25,585 INFO o.a.j.e.J.JSR223 PostProcessor: Processo nao chegou no status esperado, o schema continuará executando 
+2025-05-28 22:14:25,585 WARN o.a.j.p.h.s.HTTPSamplerBase: Existing CookieManager HTTP Cookie Manager superseded by HTTP Cookie Manager
+2025-05-28 22:14:31,391 INFO o.a.j.e.J.JSR223 PostProcessor: Processo chegou no seu status esperado, interrompendo o schema 
+2025-05-28 22:14:31,391 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-10
+2025-05-28 22:14:31,391 INFO o.a.j.r.Summariser: summary +      2 in 00:00:30 =    0.1/s Avg:  6037 Min:  5825 Max:  6250 Err:     0 (0.00%) Active: 2 Started: 20 Finished: 18
+2025-05-28 22:14:31,391 INFO o.a.j.r.Summariser: summary =      9 in 00:04:28 =    0.0/s Avg:  5990 Min:  5825 Max:  6250 Err:     0 (0.00%)
+2025-05-28 22:14:31,391 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-10
+2025-05-28 22:14:31,445 INFO o.a.j.e.J.JSR223 PostProcessor: Processo chegou no seu status esperado, interrompendo o schema 
+2025-05-28 22:14:31,445 INFO o.a.j.t.JMeterThread: Stop Thread detected by thread: Usuarios Consulta  2-9
+2025-05-28 22:14:31,445 INFO o.a.j.t.JMeterThread: Thread finished: Usuarios Consulta  2-9
+2025-05-28 22:14:31,445 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-05-28 22:14:31,445 INFO o.a.j.s.FileServer: Close: protocolos.csv@1677840544
+2025-05-28 22:14:31,447 INFO o.a.j.s.FileServer: Close: usuarios.csv@922871524
+2025-05-28 22:14:31,450 INFO o.a.j.r.Summariser: summary +      1 in 00:00:00 =   17.2/s Avg:  5859 Min:  5859 Max:  5859 Err:     0 (0.00%) Active: 0 Started: 20 Finished: 20
+2025-05-28 22:14:31,450 INFO o.a.j.r.Summariser: summary =     10 in 00:04:28 =    0.0/s Avg:  5977 Min:  5825 Max:  6250 Err:     0 (0.00%)
+2025-05-28 22:14:31,450 INFO o.a.j.JMeter: Generating Dashboard
+2025-05-28 22:14:31,450 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2025-05-28 22:14:31,457 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2025-05-28 22:14:31,571 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2025-05-28 22:14:31,571 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2025-05-28 22:14:31,573 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2025-05-28 22:14:31,573 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2025-05-28 22:14:31,578 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2025-05-28 22:14:31,580 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2025-05-28 22:14:31,580 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2025-05-28 22:14:31,580 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2025-05-28 22:14:31,599 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2025-05-28 22:14:31,599 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2025-05-28 22:14:31,599 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2025-05-28 22:14:31,599 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2025-05-28 22:14:31,607 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2025-05-28 22:14:31,608 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 2723 samples
+2025-05-28 22:14:31,608 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2025-05-28 22:14:31,608 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2025-05-28 22:14:31,608 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2025-05-28 22:14:31,611 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2025-05-28 22:14:31,612 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2025-05-28 22:14:31,613 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2025-05-28 22:14:31,626 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2025-05-28 22:14:31,626 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2025-05-28 22:14:31,627 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2025-05-28 22:14:31,627 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2025-05-28 22:14:31,627 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 11220 samples
+2025-05-28 22:14:31,627 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 2244 samples
+2025-05-28 22:14:31,627 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 748 samples
+2025-05-28 22:14:31,628 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 748 samples produced in 149ms on channel 0
+2025-05-28 22:14:31,628 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2025-05-28 22:14:31,712 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2025-05-28 22:14:31,712 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2025-05-28 22:14:31,713 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2025-05-28 22:14:31,713 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2025-05-28 22:14:31,714 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /home/runner/work/onesource-perfo/onesource-perfo/html_report/statistics.json
+2025-05-28 22:14:31,767 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2025-05-28 22:14:31,770 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /home/runner/work/onesource-perfo/onesource-perfo/html_report
+2025-05-28 22:14:32,032 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /home/runner/work/onesource-perfo/onesource-perfo/html_report, creating folder structure
+2025-05-28 22:14:32,035 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/home/runner/work/onesource-perfo/onesource-perfo/jmeter/bin/report-template' to '/home/runner/work/onesource-perfo/onesource-perfo/html_report', got message: /home/runner/work/onesource-perfo/onesource-perfo/html_report, found non empty folder with following content [/home/runner/work/onesource-perfo/onesource-perfo/html_report/statistics.json], will be ignored
+2025-05-28 22:14:32,238 INFO o.a.j.JMeter: Dashboard generated
 </pre>
