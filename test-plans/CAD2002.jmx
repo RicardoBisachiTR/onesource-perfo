@@ -235,7 +235,7 @@ File file = new File(filePath);
           <boolProp name="CounterConfig.per_user">false</boolProp>
         </CounterConfig>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
           <stringProp name="filename">protocolos.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">protocol,token,schema</stringProp>
@@ -298,11 +298,8 @@ if (responseBody.contains(palavraChave)) {
  // Processo Finalizou com erro. interrompemos a thread atual
     prev.setSuccessful(false);
     log.info(&quot;Processo Finalizou com erro. interrompemos a thread atual&quot;);
-    System.exit(1)
     prev.setStopThread(true); // Comando para interromper a thread
     ctx.getEngine().stopTest();	
-    System.exit(1)
-    		
 } else {
 
 	// Defina o limite de tempo em milissegundos (por exemplo, 1 hora = 3600000 ms)
@@ -319,7 +316,7 @@ if (responseBody.contains(palavraChave)) {
     		log.info(&quot;Teste excedeu o tempo limite, teste falhou.&quot;);
 	    	// Interrompe todos os threads
 	    	ctx.getEngine().stopTest();
-    		System.exit(1)
+    		
 	}else{	
          log.info(&quot;Processo nao chegou no status esperado, a thread continuará executando.&quot;);
 	}
@@ -403,6 +400,16 @@ if (responseBody.contains(palavraChave)) {
         </objProp>
         <stringProp name="filename"></stringProp>
       </ResultCollector>
+      <hashTree/>
+      <JSR223Listener guiclass="TestBeanGUI" testclass="JSR223Listener" testname="JSR223 Listener">
+        <stringProp name="cacheKey">true</stringProp>
+        <stringProp name="filename"></stringProp>
+        <stringProp name="parameters"></stringProp>
+        <stringProp name="script">if (!prev.isSuccessful()) {
+  System.exit(1)
+}</stringProp>
+        <stringProp name="scriptLanguage">groovy</stringProp>
+      </JSR223Listener>
       <hashTree/>
     </hashTree>
   </hashTree>
