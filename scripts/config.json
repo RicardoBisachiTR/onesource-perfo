@@ -1,3 +1,4 @@
 {    
- "endPointCAD2002": "uploadLedgerAccountFile?"   
+ "endPointCAD2002": "uploadLedgerAccountFile?",
+ "endPointCAD2003": "uploadLedgerAccountFile?" 
 }

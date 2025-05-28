@@ -42,10 +42,7 @@ env:
 jobs:
   jmeter-tests:
     runs-on: ubuntu-latest
-    env : 
-      MY_VARIABLE: 10 
-      
-
+   
     steps:
     - name: Checkout do código
       uses: actions/checkout@v4
@@ -67,7 +64,7 @@ jobs:
         JMETER_TEST_FILE=$(jq -r '.endPoint'${{env.INTEGRACAO}} scripts/config.json)
         echo "Arquivo de teste JMeter: $JMETER_TEST_FILE"
       
-        ./jmeter/bin/jmeter -JqtdUsuarios=${{env.USUARIOS}} -Jintegracao=${{env.INTEGRACAO}} -JendPointIntegracao=$JMETER_TEST_FILE -n -t test-plans/CAD2002.jmx -l result.jtl
+        ./jmeter/bin/jmeter -JqtdUsuarios=${{env.USUARIOS}} -Jintegracao=${{env.INTEGRACAO}} -JendPointIntegracao=$JMETER_TEST_FILE -n -t test-plans/integrationsECF.jmx -l result.jtl
 
     - name: Upload do resultado
       uses: actions/upload-artifact@v4

@@ -120,7 +120,7 @@ if (file.exists()) {
           <stringProp name="ConstantTimer.delay">5000</stringProp>
         </ConstantTimer>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Controller Envios - Thread  ${__threadNum} - ${schema}">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Controller Envios - Thread  ${__threadNum}">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
