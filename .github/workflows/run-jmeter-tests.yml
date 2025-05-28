@@ -1,5 +1,5 @@
 name: Teste de Performance com JMeter
-run-name: Branch->${{ github.ref_name }} Env->${{ inputs.integracao }} Dir->${{ inputs.tempo }}
+run-name: Branch->${{ github.ref_name }}  -  Integracao->${{ inputs.integracao }}   -    Dir->${{ inputs.tempo }}
 
 
 on:

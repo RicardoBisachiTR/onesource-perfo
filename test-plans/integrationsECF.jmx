@@ -256,7 +256,7 @@ File file = new File(filePath);
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Consulta PAR2101 ${schema}">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Consulta ${nameTest} -  ${schema}">
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">taxbr-solution-webservices/services/TrTaxBrEcfMessageResponseImplPort?wsdl</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -289,6 +289,7 @@ File file = new File(filePath);
 String responseBody = prev.getResponseDataAsString();
 String palavraChave = &quot;Processado com Sucesso&quot;; // Substitua isso pela palavra ou condição específica que indica cancelamento
 String erro = &quot;Ocorreu algum erro ao Processar a Requisição&quot;;
+String schemaAtual= vars.get(&quot;schema&quot;);
 
 
 if (responseBody.contains(palavraChave)) {
@@ -299,6 +300,7 @@ if (responseBody.contains(palavraChave)) {
  // Processo Finalizou com erro. interrompemos a thread atual
     prev.setSuccessful(false);
     log.info(&quot;Processo Finalizou com erro. interrompemos o schema &quot;);
+    log.info(schemaAtual);
     prev.setStopThread(true); // Comando para interromper a thread
     //System.exit(1) // comando para sinaliazar erro na execucao do actions
 } else {
