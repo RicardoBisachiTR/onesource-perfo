@@ -78,10 +78,10 @@ jobs:
         JMETER_TEST_FILE=$(jq -r '.endPoint'${{env.INTEGRACAO}} scripts/config.json)
         echo "Arquivo de teste JMeter: $JMETER_TEST_FILE"
       
-        ./jmeter/bin/jmeter -JqtdUsuarios=${{env.USUARIOS}} -Jintegracao=${{env.INTEGRACAO}} -JtempoLimite=${{env.TEMPO}} -JendPointIntegracao=$JMETER_TEST_FILE -n -t test-plans/integrationsECF.jmx -l result.jtl
+        ./jmeter/bin/jmeter -JqtdUsuarios=${{env.USUARIOS}} -Jintegracao=${{env.INTEGRACAO}} -JtempoLimite=${{env.TEMPO}} -JendPointIntegracao=$JMETER_TEST_FILE -n -t test-plans/integrationsECF.jmx -l result.jtl -e -o html_report/
 
     - name: Upload do resultado
       uses: actions/upload-artifact@v4
       with:
-        name: jmeter-result
-        path: result.jtl
+        name: jmeter-html-report
+        path: html_report/
