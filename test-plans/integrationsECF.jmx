@@ -84,7 +84,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+        <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor">
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
           <boolProp name="resetInterpreter">false</boolProp>
@@ -109,7 +109,7 @@ if (file.exists()) {
 }</stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="usuarios e tokens" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="usuarios e tokens">
           <stringProp name="filename">usuarios.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">schema,token</stringProp>
@@ -236,7 +236,7 @@ File file = new File(filePath);
           <boolProp name="CounterConfig.per_user">false</boolProp>
         </CounterConfig>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
           <stringProp name="filename">protocolos.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">protocol,token,schema</stringProp>
@@ -252,12 +252,12 @@ File file = new File(filePath);
           <stringProp name="LoopController.loops">2000</stringProp>
         </LoopController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Controller Consultas  ${nameTest} - ${schema}" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Controller Consultas  ${nameTest} - ${schema}">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Consulta ${nameTest} -  ${schema}" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Consulta ${nameTest} -  ${schema}">
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">taxbr-solution-webservices/services/TrTaxBrEcfMessageResponseImplPort?wsdl</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -281,26 +281,26 @@ File file = new File(filePath);
                 </collectionProp>
               </elementProp>
             </HTTPSamplerProxy>
-            <hashTree>
-              <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
-                <stringProp name="cacheKey">true</stringProp>
-                <stringProp name="filename"></stringProp>
-                <stringProp name="parameters"></stringProp>
-                <stringProp name="script">// Assumindo que você está procurando uma palavra específica no corpo da resposta para decidir interromper a thread
+            <hashTree/>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <stringProp name="script">// Assumindo que você está procurando uma palavra específica no corpo da resposta para decidir interromper a thread
 String responseBody = prev.getResponseDataAsString();
 String palavraChave = &quot;Processado com Sucesso&quot;; // Substitua isso pela palavra ou condição específica que indica cancelamento
 String erro = &quot;Ocorreu algum erro ao Processar a Requisição&quot;;
-String schemaAtual= vars.get(&quot;schema&quot;);
+String schemaAtual = vars.get(&quot;schema&quot;);
 
 
-if (responseBody.contains(palavraChave)) {
+if(responseBody.contains(palavraChave)) {
     // Se a palavra chave for encontrada, interrompemos a thread atual
-    log.info(&quot;Processo chegou no seu status esperado, interrompendo o schema &quot;);
+    log.info(&quot;Processo chegou no seu status esperado, interrompendo o schema &quot; + schemaAtual);
     prev.setStopThread(true); // Comando para interromper a thread
 }else if(responseBody.contains(erro)){
  // Processo Finalizou com erro. interrompemos a thread atual
     prev.setSuccessful(false);    
-    log.info(&quot;Processo Finalizou com erro. interrompemos o schema &quot;);   
+    log.info(&quot;Processo Finalizou com erro. interrompemos o schema &quot; + schemaAtual);   
     prev.setStopThread(true); // Comando para interromper a thread
     //System.exit(1) // comando para sinaliazar erro na execucao do actions
 } else {
@@ -316,20 +316,18 @@ if (responseBody.contains(palavraChave)) {
 	if (elapsedTime &gt; timeLimit) {
     		// Log a message
     		prev.setSuccessful(false);
-    		log.info(&quot;Teste excedeu o tempo limite, teste falhou.&quot;);
-    		log.info(schemaAtual);
+    		log.info(&quot;Teste excedeu o tempo limite, teste falhou.&quot; + schemaAtual);    		
 		prev.setStopThread(true); // Comando para interromper a thread
 	    	// Interrompe todos os threads	    	
     		//ctx.getEngine().stopTest();    	
 	}else{	
-         log.info(&quot;Processo nao chegou no status esperado, o schema continuará executando &quot;);         
+         log.info(&quot;Schema &quot; + schemaAtual + &quot; Processo nao chegou no status esperado, o schema continuará executando &quot;);         
 	}
 }
 </stringProp>
-                <stringProp name="scriptLanguage">groovy</stringProp>
-              </JSR223PostProcessor>
-              <hashTree/>
-            </hashTree>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PostProcessor>
+            <hashTree/>
           </hashTree>
         </hashTree>
       </hashTree>
